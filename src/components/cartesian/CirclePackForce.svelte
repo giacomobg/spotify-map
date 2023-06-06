@@ -74,7 +74,6 @@
         if (!textWritten && genres.every((genre) => getLabelText(genre) != null)) {
           textWritten = true;
         };
-        console.log(selectedArtist != undefined)
         if (selectedArtist != undefined) {
           setSelectedArtistXY();
           if (document.getElementById('selected-artist')) {
@@ -172,7 +171,6 @@
 
         // set new selectedArtist
         selectedArtist = e;
-        console.log(selectedArtist);
 
         // highlight new selectedArtist
         // nodes.map(node => node.index == selectedArtist.index ? node.collideR = node.collideR + hoverBump : null);
