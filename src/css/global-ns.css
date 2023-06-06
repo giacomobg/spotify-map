@@ -1,0 +1,198 @@
+html {
+	font-size: 18px;
+	line-height: 28px;
+}
+
+body {
+	color: #252524;
+}
+
+a {
+	color: #252524;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: #d82d1d;
+}
+
+/* buttons and interaction */
+label {
+	display: block;
+}
+
+input, button, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+}
+
+input, select, textarea {
+	padding: 0.4em;
+	margin: 0 0 0.5em 0;
+	box-sizing: border-box;
+	border: 1px solid #333;
+	border-radius: 2px;
+}
+
+input:disabled {
+	color: #ccc;
+}
+
+/* div.radio-cell label is a radio button toggle that is styled the same as a button */
+button, div.radio-cell label {
+	height: 32px;
+	margin: 2px;
+	padding: 0 10px;
+	font-size: 13px;
+	border: none;
+	outline: 1px solid #666;
+}
+
+button.large-button {
+	height: 48px;
+	font-size: 16px;
+	padding: 0 20px;
+}
+
+button {
+	color: #333;
+	background-color: #fff;
+}
+
+button.primary-button {
+	background-color: black;
+	color: white;
+	outline: none;
+}
+
+button.secondary-button {
+	background-color: #d82d1d;
+	color: white;
+	outline: none;
+}
+
+button.ghost-button {
+	outline: none;
+}
+
+button:not(:disabled):hover {
+	opacity: 75%;
+}
+
+button:not(:disabled):active {
+	opacity: 50%;
+}
+
+button:focus {
+	border: #d82d1d solid 2px;
+	margin: 2px 0;
+}
+
+button:disabled {
+	background-color: #ddd;
+	color: #888;
+}
+
+input[type="radio"]:checked+label.toggle {
+    background-color: black;
+    color: white;
+}
+input[type="radio"]:focus+label.toggle {
+	border: 2px solid #D82D1D;
+    margin: 0;
+}
+
+input[type="radio"]:not(:checked)+label:not(:disabled):hover {
+	opacity: 75%;
+}
+
+input[type="radio"]:not(:checked)+label:not(:disabled):active {
+	opacity: 50%;
+}
+
+.embed-container {  
+  border-top: 1px solid rgba(37, 37, 36, 0.25);
+	font-size: 0.667rem;
+	line-height: 0.888rem;
+    background-repeat: no-repeat;
+    background-size: 130px;
+    background-position: 100% 99%;
+	padding-bottom: 30px;
+    margin-bottom: 1.75rem;
+}
+
+.chart-container .tick text {
+	fill: #252524;
+	font-size: 0.667rem;
+	line-height: 0.888rem;
+}
+
+.chart-container .tick line {
+	stroke-width: 1px;
+	stroke: #ccc;
+	stroke-opacity: 0.5;
+	stroke-dasharray: 0;
+}
+
+.chart-container .y-axis .tick.tick-0 line {
+	stroke: #252524;
+	stroke-opacity: 1;
+}
+
+.chart-container .x-axis .baseline {
+	stroke-dasharray: 0;
+}
+
+.small-multiple-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+ }
+
+.small-multiple, .simple-chart-container {
+    box-sizing: border-box;
+    margin: 8px;
+ }
+
+h3 {
+	margin: 0;
+    padding: 0;
+    font-size: 1.333rem;
+    line-height: 1.556rem;
+    margin-top: 0.888em;
+}
+
+h4 {
+	margin: 0;
+    padding: 0;
+    font-size: 0.888rem;
+    line-height: 1.333rem;
+    color: #252524;
+    opacity: 0.8;
+    font-weight: normal;
+    padding-bottom: 0.667rem;
+}
+
+h5 {
+	margin: 0;
+	padding: 0;
+	font-size: 0.667rem;
+}
+
+.source-text {
+    color: #7f7f7f;
+    margin: 8px 0;
+    font-size: 0.667rem;
+    line-height: 0.888rem;
+}
+.source-text a {
+	color: #7f7f7f;
+}
+.source-text a:hover {
+    color: #252524;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: #d82d1d;
+}

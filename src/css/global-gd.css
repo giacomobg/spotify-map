@@ -1,0 +1,201 @@
+@font-face{
+	font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v9/zYXgKVElMYYaJe8bpLHnCwDKhdHeFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face{
+	font-family: 'IBM Plex Sans Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexsanscondensed/v8/Gg8lN4UfRSqiPg7Jn2ZI12V4DCEwkj1E4LVeHYapyK4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+	color: #000;
+}
+
+a {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: black;
+}
+
+/* buttons and interaction */
+label {
+	display: block;
+}
+
+input, button, select, textarea {
+	margin: 4px;
+	min-width: fit-content;
+	font-family: 'IBM Plex Sans', sans-serif; /* catch IE not loading fonts */
+	border: 1px solid #fafafa;
+	background: #fafafa;
+}
+
+div.radio-cell label {
+  background-color: #12418D;
+  color: white;
+}
+
+/* div.radio-cell label is a radio button toggle that is styled the same as a button */
+button, div.radio-cell label {
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+button {
+  background-color: white;
+  color: #333;
+  height: 32px;
+  margin: 2px;
+  padding: 0 10px;
+  border: none;
+  outline: 1px solid #333;
+}
+
+button.large-button {
+  height: 48px;
+  font-size: 16px;
+  padding: 0 20px;
+}
+
+button.primary-button {
+  background-color: #12418D;
+  color: white;
+  outline: none;
+}
+
+button.secondary-button {
+  background-color: #333;
+  color: white;
+  outline: none;
+}
+
+button:hover, button:active {
+  outline-color: #006CDC;
+}
+input[type="radio"]:checked+label.toggle, div.radio-cell label.toggle:hover,
+button.primary-button:hover, button.primary-button:active {
+  background-color: #006CDC;
+  color: white;
+}
+button.secondary-button:hover, button.secondary-button:active {
+  background-color: #000;
+}
+input[type="radio"]:focus+label.toggle,
+button:focus {
+  border: 2px solid #12418D;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+input[type="radio"]:focus+label.toggle {
+  margin: 0 !important;
+}
+
+input:disabled+label {
+  opacity: 20%;
+}
+
+.embed-container {
+	font-family: "IBM Plex Sans", sans-serif;
+	padding-bottom: 30px;
+	background-image: url(https://nsmg-projects-public.s3.eu-west-2.amazonaws.com/common/InvestmentMonitor_logo.png);
+	background-repeat: no-repeat;
+	background-size: 150px;
+	background-position: 100% 99%;
+}
+
+.chart-container {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+}
+
+.chart-container .tick {
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.chart-container .isNumber {
+	font-family: "IBM Plex Mono", sans-serif;
+}
+
+.chart-container .tick text {
+	fill: black;
+}
+
+.chart-container .tick line {
+	stroke: #ddd;
+}
+
+.chart-container .y-axis .tick.tick-0 line {
+	stroke-dasharray: 0;
+}
+
+.chart-container .x-axis .baseline {
+	stroke-dasharray: 0;
+}
+
+.small-multiple-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+ }
+
+.small-multiple, .simple-chart-container {
+    box-sizing: border-box;
+    margin: 8px;
+ }
+
+.source-text {
+  color: black;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "IBM Plex Sans Condensed";
+}
+
+h3,
+h4,
+h5 {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #000;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 30px;
+  margin: 0.5em 0 0.25em;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  margin: 0.5rem 0;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@media (max-width: 500px) {
+  h3 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0.5rem 0;
+  }
+}
