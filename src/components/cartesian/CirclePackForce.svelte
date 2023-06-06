@@ -247,8 +247,8 @@
             // selectedArtist != null && selectedLinkedArtistsIndices.includes(point.index) ? "#83b5d1":
             $zGet(point)
             )}
-          stroke={(selectedArtist != undefined && selectedArtist.index == point.index) ? "#F7DA1A" : nodeStroke}
-          stroke-width={(selectedArtist != undefined && selectedArtist.index == point.index) ? "3px" :nodeStrokeWidth}
+          stroke={nodeStroke}
+          stroke-width={nodeStrokeWidth}
           cx='{point.x}'
           cy='{point.y}'
           on:mouseover={() => onMouseover(point)}

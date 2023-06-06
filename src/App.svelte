@@ -159,7 +159,8 @@
   .area-container,
   .col-container {
     position: relative; /* 100% turns into 100vh if you don't */
-    height: 80vh;
+    height: 120vw;
+    max-height: 80vh;
     max-width: 100vw;
   }
   /* CARTESIAN_INCL_END */
