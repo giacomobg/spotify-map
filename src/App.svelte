@@ -101,9 +101,7 @@
     <br>I picked some of the most frequent and most distinct genres to label and they are centred amongst their artist bubbles.
     <!-- Any genre associated with at least {genreThreshold} artists has a label -->
     <br>Some artists have lots of genres assigned. Some have none or they don't make sense - those generally end up on the outer edges. 
-    <br>
-    DEBUGGING
-  </h4>
+    </h4>
 
   <!-- {#if selectedArtist} -->
   {#if false}
