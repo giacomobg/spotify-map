@@ -155,6 +155,7 @@
     }
 
     function setSelectedArtistXY() {
+      console.log(selectedArtist)
       selectedArtistX = selectedArtist.x;
       selectedArtistY = selectedArtist.y;
     }
