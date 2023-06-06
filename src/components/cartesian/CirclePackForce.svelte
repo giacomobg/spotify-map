@@ -252,7 +252,7 @@
           cx='{point.x}'
           cy='{point.y}'
           on:mouseover={() => onMouseover(point)}
-          on:focus={onMouseover}
+          on:focus={() => onMouseover(point)}
           on:mousedown={() => onMousedown(point)}
         >
           <!-- <title>{point[$custom.title]}</title> -->
