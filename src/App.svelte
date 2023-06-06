@@ -41,7 +41,7 @@
   };
   let data;
 
-  let selectedArtist;
+  let selectedArtist = undefined;
   let linkedArtists;
 
   ///////////////////////////////////////////////////

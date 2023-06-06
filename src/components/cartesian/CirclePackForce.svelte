@@ -34,7 +34,7 @@
     /** @type {Boolean} [groupBy=true] - Group the nodes by the return value of the x-scale. If `false`, align all the nodes to the canvas center. */
     export let groupBy = true;
 
-    export let selectedArtist;
+    export let selectedArtist = undefined;
     let selectedArtistX;
     let selectedArtistY;
     export let linkedArtists;
@@ -74,7 +74,8 @@
         if (!textWritten && genres.every((genre) => getLabelText(genre) != null)) {
           textWritten = true;
         };
-        if (selectedArtist) {
+        console.log(selectedArtist != undefined)
+        if (selectedArtist != undefined) {
           setSelectedArtistXY();
           if (document.getElementById('selected-artist')) {
             selectedArtistLabelWidth = document.getElementById('selected-artist').getBBox().width;
@@ -155,14 +156,13 @@
     }
 
     function setSelectedArtistXY() {
-      console.log(selectedArtist)
       selectedArtistX = selectedArtist.x;
       selectedArtistY = selectedArtist.y;
     }
 
 
     function onMouseover(e) {
-        let hoverBump = 400
+        // let hoverBump = 400
 
         // return old selectedArtist to normal
         // if (selectedArtist) {
@@ -172,14 +172,14 @@
 
         // set new selectedArtist
         selectedArtist = e;
+        console.log(selectedArtist);
 
         // highlight new selectedArtist
         // nodes.map(node => node.index == selectedArtist.index ? node.collideR = node.collideR + hoverBump : null);
         // restart++;
 
-        linkedArtists = nodes.filter(node => node.genres.some(r=> selectedArtist.genres.includes(r)));
-        selectedLinkedArtistsIndices = linkedArtists.map(node => node.index);
-        // selectedLinkedArtistsIndices = [selectedArtist.index].concat(linkedArtistsIndices);
+        // linkedArtists = nodes.filter(node => node.genres.some(r=> selectedArtist.genres.includes(r)));
+        // selectedLinkedArtistsIndices = linkedArtists.map(node => node.index);
     }
 
     function onMousedown(e) {
@@ -249,8 +249,8 @@
             // selectedArtist != null && selectedLinkedArtistsIndices.includes(point.index) ? "#83b5d1":
             $zGet(point)
             )}
-          stroke={(selectedArtist != null && selectedArtist.index == point.index) ? "#F7DA1A" : nodeStroke}
-          stroke-width={(selectedArtist != null && selectedArtist.index == point.index) ? "3px" :nodeStrokeWidth}
+          stroke={(selectedArtist != undefined && selectedArtist.index == point.index) ? "#F7DA1A" : nodeStroke}
+          stroke-width={(selectedArtist != undefined && selectedArtist.index == point.index) ? "3px" :nodeStrokeWidth}
           cx='{point.x}'
           cy='{point.y}'
           on:mouseover={() => onMouseover(point)}
@@ -290,7 +290,7 @@
       </g>
     {/each}
 
-    {#if selectedArtist}
+    {#if selectedArtistY}
       <rect
         id="selected-artist-background"
         class="no-hover"
