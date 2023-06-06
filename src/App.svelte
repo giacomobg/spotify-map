@@ -102,6 +102,7 @@
     <!-- Any genre associated with at least {genreThreshold} artists has a label -->
     <br>Some artists have lots of genres assigned. Some have none or they don't make sense - those generally end up on the outer edges. 
     <br>
+    DEBUGGING
   </h4>
 
   <!-- {#if selectedArtist} -->
