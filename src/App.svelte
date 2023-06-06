@@ -25,10 +25,11 @@
   let counts = {};
   let genreUseList = true;
   let genreThreshold = 10;
-  let genreList = ["uk hip hop", "electronica", "uk alternative hip hop", "grime",
+  let genreList = ["electronica", "uk alternative hip hop", "grime",
     "art pop", "wonky", "alternative r&b",
     "melodic drill", "hyperpop",
-    "indie soul", "drum and bass"
+    "indie soul", "drum and bass",
+    "lo-fi house", "ukg revival"
   ];
 
   let colors = ["#83b5d1","#6a041d","#dbd8b3","#324a5f","#d88373"].concat(Array(0).fill("#999"));
@@ -64,7 +65,6 @@
         genres,
         count: +d.count,
         collideR: +d.count,
-        cluster: +d.cluster,
         popularity: +d.popularity,
         numLinks: 0
       }
