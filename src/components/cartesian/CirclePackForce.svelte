@@ -57,7 +57,6 @@
 
     let mean = (array) => array.reduce((a, b) => a + b) / array.length;
 
-
     // export let links;
   
     /* --------------------------------------------
@@ -127,26 +126,28 @@
      */
 
     let xyStrength;
+    let rFactor;
     // changing the power changes the rate at which the bubbles scale with window size. Larger --> strength scales down faster at higher widths
     $: xyStrength = 10/($width**(10/10));
+    $: rFactor = (0.4+$width/2500), restart++;
 
     $: restart, simulation
         .force('center', forceCenter($width / 2 + 30, $height / 2 + 50))
         .force('x', forceX().strength(xyStrength))
         .force('y', forceY().strength(xyStrength))
-        .force('charge', forceManyBody().strength(-1.2))
+        .force('charge', forceManyBody().strength(-1.6))
         .force('link', forceLink(links)
-            .distance(link => $rGet(link.source) + $rGet(link.target))
+            .distance(link => $rGet(link.source)*rFactor + $rGet(link.target)*rFactor)
             .strength(link => {
               let isClicked = false;
               if (clickedArtist && link.source.index == clickedArtist.index) isClicked=true;
-              return (isClicked ? 100 : 1) * 0.08 / Math.min(link.source.numLinks, link.target.numLinks)
+              return (isClicked ? 100 : 1) * 0.1 / Math.min(link.source.numLinks, link.target.numLinks)
               // return (isClicked ? 100 : 1) * 0.04 / Math.min(link.source.numLinks, link.target.numLinks)
             })
         )
         .force('collision', forceCollide()
             .radius((d) => {
-              return $rScale(d.collideR) + nodeStrokeWidth / 2; // Divide this by two because an svg stroke is drawn halfway out
+              return $rScale(d.collideR)*rFactor + nodeStrokeWidth / 2; // Divide this by two because an svg stroke is drawn halfway out
             })
             .strength(1)
             // .strength(0.9)
@@ -260,7 +261,7 @@
         <circle
           id={"circle"+point.index}
           class='node'
-          r={$rGet(point)}
+          r={$rGet(point)*(rFactor)}
           fill={nodeColor || (
             // selectedArtist != null && selectedArtist.index == point.index) ? "#222" : (
             // selectedArtist != null && selectedLinkedArtistsIndices.includes(point.index) ? "#83b5d1":

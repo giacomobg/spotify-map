@@ -28,7 +28,7 @@
   let genreSelectedThreshold = 9;
   let genreThreshold = 3;
   let artistThreshold = 3;
-  let startingGenres = ["uk alternative hip hop", "grime", "melodic drill", "electronica", "wonky", "hyperpop", "art pop", "uk contemporary r&b", "indie soul", "drum and bass","pop", "rap", "indie rock", "lo-fi house", "ukg revival"]
+  let startingGenres = ["uk alternative hip hop", "grime", "melodic drill", "electronica", "wonky", "hyperpop", "uk contemporary r&b", "indie soul", "drum and bass","pop", "rap", "indie rock", "ukg revival", "deep dubstep"]
   let genreList = ["electronica", "uk alternative hip hop",
     "art pop", "wonky", "alternative r&b",
     "melodic drill", "hyperpop",
@@ -39,7 +39,7 @@
     "urbano latino", "uk contemporary r&b", "london rap", "grime", "bass house", "deconstructed club", "classic dubstep", "uk drill"
   ];
 
-  let colors = ["#83b5d1","#6a041d","#dbd8b3","#324a5f","#d88373"].concat(Array(0).fill("#999"));
+  let colors = ["#d88373","#83b5d1","#6a041d","#dbd8b3","#324a5f"].concat(Array(0).fill("#999"));
   // let colors = ["#dbd8b3","#d88373","#6a041d"];
   let config = {
     rKey: "count",
@@ -112,18 +112,19 @@
   <h3>My Spotify universe</h3>
   <h4>
     <br>My listening data for the last year, as a set of moving celestial bodies in gravitation towards an orbit.
-    <br>The UK hip hop galaxy cycles round the margins, its constellations of grime and drill and 'alternative' hip hop.
-    <br>The core planetary system is a continuum from Joy Crookes and UK contemporary R&B to electronic music, passing through FKA Twigs, escape room (one of those genres completely made up by Spotify),
-    hyperpop, through Charli XCX's art pop, Bloc Party's indie rock, uncategorisable Jamie XX and Mount Kimbie to the solar system of wonky beats and its moons of lo-fi house and 'classic' dubstep.
-    <br>There were some surprises, like the UK garage revival asteroid belt. 
-    <br>Musicians without genres, or with very random ones, are the distant stars that sit around the edges.
-    <br>Hover over an artist bubble to see <span class="highlighted">their name</span> (genres they belong to will go <span class="highlighted">yellow</span> too). They are sized by song plays; I only included ones I listened to at least 3 times.
+    <br>The UK hip hop galaxy cycles round the margins, its constellations of <span class="highlighted-grey">grime</span> and <span class="highlighted-grey">drill</span> and <span class="highlighted-grey">alternative hip hop</span>.
+    <br>The core planetary system is a continuum from <span class="highlighted-grey">UK contemporary R&B</span> to <span class="highlighted-grey">electronica</span>, flowing through Yaeji and FKA Twigs to <span class="highlighted-grey">hyperpop</span> and Sega Bodega,
+    through a connecting strip of <span class="highlighted-grey">indie soul</span> and Bloc Party
+    to chilled Mount Kimbie and the solar system of <span class="highlighted-grey">wonky</span> beats and its moons of <span class="highlighted-grey">lo-fi house</span> and <span class="highlighted-grey">dubstep</span>.
+    <br>There were some surprises, like the <span class="highlighted-grey">UK garage revival</span> asteroid belt. 
+    <br>Musicians without genres, or with very random ones, are the distant stars gleaming round the edges.
+    <br>Hover over an artist bubble to see <span class="highlighted-yellow">their name</span> (labelled genres they belong to will go <span class="highlighted-yellow">yellow</span> too). They are sized by song plays - I listened to Clavish 263 times.
     </h4>
 
   <!-- {#if selectedArtist} -->
   {#if false}
     <div class='info-box'>
-      <p class='info info-head'>
+      <p class='info bold'>
         {selectedArtist.artistName}
       </p>
       <p class='info'>
@@ -133,7 +134,7 @@
     <div class='info-box info-box-right'>
       <!-- {#if linkedArtists.length > 1} -->
       {#if false}
-        <p class='info info-head'>Related artists</p>
+        <p class='info bold'>Related artists</p>
         <p class='info'>
           {
             @html linkedArtists
@@ -166,11 +167,18 @@
 
   </div>
 
-  <h4>On your phone, try switching to landscape so it's all a bit less packed in<br><br></h4>
+  <h4>On your phone, try switching to landscape so it's all a bit less packed in<br></h4>
+  <h4><span class="bold">Some notes on how this was created:</span>
+    <br>I used Python to process the Spotify data, counting the number of plays per artist, removing all the ones I listened to 3 times or fewer.
+    <br>I used the Spotify web API to search for each artist and get their genre. I searched by the artist's name, there was no ID in this dataset, which is why Dave, CRO and BOP for instance got the wrong genres.
+    <br>I exported this data along with a list of all the pairs of artists sharing a genre.
+    <br>Using d3-force, I was able to simulate physics, including forces that make any artists of the same genre gravitate together. That's how the bubbles know how to find each other and self-organise into clusters.
+  </h4>
+  <br>
 
   {#if genreData}
     <Checklist
-      legend={"You can pick a genre to see where it turns up on the map.<br>There's a lot... but there are fun clusters like Italian underground hip hop, and, err, brostep and Tamil pop? How did that get there..."}
+      legend={"Click a genre to see where it turns up on the map.<br>There's too many... but there are fun ones like Italian underground hip hop and, err, brostep and Tamil pop? How did that get there..."}
       bind:entries={genreData}
     ></Checklist>
   {/if}
@@ -183,8 +191,8 @@
   .area-container,
   .col-container {
     position: relative; /* 100% turns into 100vh if you don't */
-    min-height: 450px;
-    height: 70vw;
+    min-height: 440px;
+    height: 85vw;
     /* max-height: 80vh; */
     width: 100vw;
   }
@@ -213,12 +221,15 @@
     font-size: 24px;
     line-height: 1.1em;
   }
-  .info-head {
+  .bold {
     font-family: 'SalmaBold';
   }
 
-  .highlighted {
+  .highlighted-yellow {
     background: #F7DA1A;
+  }
+  .highlighted-grey {
+    background: #e0e0e0;
   }
 </style>
 

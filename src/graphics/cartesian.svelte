@@ -7,7 +7,8 @@
     export let config;
 
     $: rMax = Math.max(...data.flat().map(d => d[config?.rKey]));
-    $: rDomain = [0, rMax];
+    // $: rDomain = [0, rMax];
+    $: rDomain = [1, rMax];
 </script>
 <LayerCake
     padding={config?.padding || { right: 8, bottom: 32, left: 32, top: 8 }}

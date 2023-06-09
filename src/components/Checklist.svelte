@@ -25,7 +25,10 @@
     }
 
     legend {
-        font-size: 14px;
+        font-size: 0.888rem;
+        line-height: 1.333rem;
+        padding-bottom: 0.667rem;
+
     }
 
     label {
