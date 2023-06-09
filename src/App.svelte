@@ -83,6 +83,7 @@
     }
 
     genresUnique = genresFlat
+      .sort((a,b) => counts[b] - counts[a])
       .filter((genre) => {
         if (genreUseList) {
           return genreList.includes(genre)
@@ -90,8 +91,7 @@
           return counts[genre] > genreThreshold
         }
       })
-      .filter((genre, index, arr) => arr.indexOf(genre) === index)
-      .sort((a,b) => counts[b] > counts[a]);
+      .filter((genre, index, arr) => arr.indexOf(genre) === index);
     console.log(genresUnique);
     genreData = genresUnique.map((genre, i) => (
       {
@@ -166,11 +166,11 @@
 
   </div>
 
-  <h4>On your phone, try switching to landscape so it's all a bit less packed in</h4>
+  <h4>On your phone, try switching to landscape so it's all a bit less packed in<br><br></h4>
 
   {#if genreData}
     <Checklist
-      legend={"You can pick a genre to see where it turns up on the map.<br>There's a lot... but there are fun clusters like Italian underground hip hop, and, err, brostep and tamil pop? How did that get there..."}
+      legend={"You can pick a genre to see where it turns up on the map.<br>There's a lot... but there are fun clusters like Italian underground hip hop, and, err, brostep and Tamil pop? How did that get there..."}
       bind:entries={genreData}
     ></Checklist>
   {/if}
