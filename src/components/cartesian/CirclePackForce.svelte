@@ -131,7 +131,7 @@
     $: xyStrength = 10/($width**(10/10));
 
     $: restart, simulation
-        .force('center', forceCenter($width / 2 + 30, $height / 2 + 30))
+        .force('center', forceCenter($width / 2 + 30, $height / 2 + 50))
         .force('x', forceX().strength(xyStrength))
         .force('y', forceY().strength(xyStrength))
         .force('charge', forceManyBody().strength(-1.2))

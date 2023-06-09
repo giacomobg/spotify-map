@@ -166,6 +166,8 @@
 
   </div>
 
+  <h4>On your phone, try switching to landscape so it's all a bit less packed in</h4>
+
   {#if genreData}
     <Checklist
       legend={"You can pick a genre to see where it turns up on the map.<br>There's a lot... but there are fun clusters like Italian underground hip hop, and, err, brostep and tamil pop? How did that get there..."}
@@ -181,7 +183,7 @@
   .area-container,
   .col-container {
     position: relative; /* 100% turns into 100vh if you don't */
-    /* min-height: 50vh; */
+    min-height: 450px;
     height: 70vw;
     /* max-height: 80vh; */
     width: 100vw;
