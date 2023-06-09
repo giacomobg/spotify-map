@@ -37,10 +37,9 @@
     export let selectedArtist = undefined;
     let selectedArtistX;
     let selectedArtistY;
-    export let linkedArtists;
     export let genres;
     let genresXY = {};
-    genres.map((genre) => genresXY[genre] = {x:0, y:0});
+    genres.map((genre) => genresXY[genre.name] = {x:0, y:0});
     let genreNodes;
     let genreX;
     let genreY;
@@ -49,7 +48,8 @@
     let linkedArtistsIndices;
     let selectedLinkedArtistsIndices;
 
-    let textWritten = false;
+    let artistListensThreshold = 5;
+
     let selectedArtistLabelWidth = 0;
     let labelLRMargin = 5;
 
@@ -63,32 +63,46 @@
     /* --------------------------------------------
      * Make a copy because the simulation will alter the objects
      */
-    const initialNodes = $data.map((d) => ({ ...d }));
+    const initialNodes = $data
+      // .filter((d) => d.count >= artistListensThreshold)
+      .map((d) => ({ ...d }));
     const simulation = forceSimulation(initialNodes)
     let nodes = [];
     simulation.on("tick", () => {
 
         nodes = simulation.nodes();
 
+        // TODO: bit hacky - check on every simulation that the genre labels are set right
+        genres = genres;
+
+        // every simulation the genre and artist labels need to move
         setGenreXY(nodes);
-        if (!textWritten && genres.every((genre) => getLabelText(genre) != null)) {
-          textWritten = true;
-        };
         if (selectedArtist != undefined) {
           setSelectedArtistXY();
-          if (document.getElementById('selected-artist')) {
-            selectedArtistLabelWidth = document.getElementById('selected-artist').getBBox().width;
-          }
         };
     })
     console.log(initialNodes);
 
+    // TODO: make a version that is both visually clean and fits into Svelte well?
+    let intervalID;
+    $: { 
+      if (selectedArtist) {
+        intervalID = setInterval(() => {
+            if (document.getElementById('selected-artist')) {
+              clearInterval(intervalID)
+              selectedArtistLabelWidth = document.getElementById('selected-artist').getBBox().width;
+            }
+          },
+        10);
+      }
+    }
 
     let links = null;
     fetch('./data/links.json')
         .then(response => response.json())
         .then(json => {
-            links = json.slice(10)
+            links = json;
+            console.log(links);
             // count up number of times each artist appears and set as their numlinks
             initialNodes.forEach((artist, i) => {
                 artist.numLinks = links.filter(link => link.source == i || link.target == i).length;
@@ -114,10 +128,10 @@
 
     let xyStrength;
     // changing the power changes the rate at which the bubbles scale with window size. Larger --> strength scales down faster at higher widths
-    $: xyStrength = 1.2/($width**(4/5));
+    $: xyStrength = 10/($width**(10/10));
 
     $: restart, simulation
-        .force('center', forceCenter($width / 2, $height / 2))
+        .force('center', forceCenter($width / 2 + 30, $height / 2 + 30))
         .force('x', forceX().strength(xyStrength))
         .force('y', forceY().strength(xyStrength))
         .force('charge', forceManyBody().strength(-1.2))
@@ -126,7 +140,7 @@
             .strength(link => {
               let isClicked = false;
               if (clickedArtist && link.source.index == clickedArtist.index) isClicked=true;
-              return (isClicked ? 100 : 1) * 0.05 / Math.min(link.source.numLinks, link.target.numLinks)
+              return (isClicked ? 100 : 1) * 0.08 / Math.min(link.source.numLinks, link.target.numLinks)
               // return (isClicked ? 100 : 1) * 0.04 / Math.min(link.source.numLinks, link.target.numLinks)
             })
         )
@@ -149,8 +163,13 @@
       // loop through genresXY
       for (const genre in genresXY) {
         genreNodes = nodes.filter(node => node.genres.includes(genre));
-        genreX = mean(genreNodes.map(node => node.x));
-        genreY = mean(genreNodes.map(node => node.y));
+        if (genreNodes.length == 0) {
+          genreX = 0;
+          genreY = 0;
+        } else {
+          genreX = mean(genreNodes.map(node => node.x));
+          genreY = mean(genreNodes.map(node => node.y));
+        }
         genresXY[genre] = {x: genreX, y: genreY};
       }
     }
@@ -203,11 +222,10 @@
       // restart++;
     }
 
-    // get the x,y positions of every genre in every simulation
-    genres
-
     let removeSpaces = (str) => str.replace(/ /g,'');
-    let getLabelText = (genre) => document.getElementById("label-text-" + removeSpaces(genre));
+    let getLabelText = (genre) => {
+      return document.getElementById("label-text-" + removeSpaces(genre));
+    }
     // bboxes = {};
     // let textFunc = (genre) => {; return genre}
 
@@ -262,30 +280,32 @@
     </g>
 
     {#each genres as genre}
-      <g
-        transform={"translate(" + genresXY[genre].x + "," + genresXY[genre].y + ")"}
-      >
-        {#if textWritten}
-          <rect
-            id={"label-background-" + removeSpaces(genre)}
-            class="no-hover label-background"
-            x={-getLabelText(genre).getBBox().width/2}
-            y=-0.7em
-            width={getLabelText(genre).getBBox().width + labelLRMargin*2}
-            height=1.4em
-            fill={((selectedArtist != undefined) && selectedArtist.genres.includes(genre)) ? "#F7DA1A" : "#ccc"}
-          />
-        {/if}
-        <text
-          id={"label-text-" + removeSpaces(genre)}
-          class="no-hover label-text"
-          x={labelLRMargin}
-          y=0.3em
+      {#if genre.checked}
+        <g
+          transform={"translate(" + genresXY[genre.name].x + "," + genresXY[genre.name].y + ")"}
         >
-          {genre}
-        </text>
+          {#if getLabelText(genre.name) != undefined}
+            <rect
+              id={"label-background-" + removeSpaces(genre.name)}
+              class="no-hover label-background"
+              x={-getLabelText(genre.name).getBBox().width/2}
+              y=-0.7em
+              width={getLabelText(genre.name).getBBox().width + labelLRMargin*2}
+              height=1.4em
+              fill={((selectedArtist != undefined) && selectedArtist.genres.includes(genre.name)) ? "#F7DA1A" : "#ccc"}
+            />
+          {/if}
+          <text
+            id={"label-text-" + removeSpaces(genre.name)}
+            class="no-hover label-text"
+            x={labelLRMargin}
+            y=0.3em
+          >
+            {genre.name}
+          </text>
 
-      </g>
+        </g>
+        {/if}
     {/each}
 
     {#if selectedArtistY}
@@ -293,7 +313,7 @@
         id="selected-artist-background"
         class="no-hover"
         x={selectedArtistX - selectedArtistLabelWidth/2 - labelLRMargin}
-        y={selectedArtistY - 44}
+        y={selectedArtistY - 50}
         width={selectedArtistLabelWidth + labelLRMargin*2}
         height=2.2em
         fill="#F7DA1A"
@@ -303,7 +323,7 @@
         id="selected-artist"
         class="no-hover"
         x={selectedArtistX - selectedArtistLabelWidth/2}
-        y={selectedArtistY - 24}
+        y={selectedArtistY - 30}
       >
         {selectedArtist.artistName}
       </text>

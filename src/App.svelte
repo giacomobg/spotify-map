@@ -10,7 +10,7 @@
   import ForceLayout from './components/cartesian/CirclePackForce.svelte';
   // CARTESIAN_INCL_END
 
-  import RadioButtonToggle from './components/RadioButtonToggle.svelte';
+  import Checklist from './components/Checklist.svelte';
 
   let isLoaded = false;
 
@@ -22,14 +22,21 @@
   let genres;
   let genresFlat = [];
   let genresUnique;
+  let genreData;
   let counts = {};
-  let genreUseList = true;
-  let genreThreshold = 10;
-  let genreList = ["electronica", "uk alternative hip hop", "grime",
+  let genreUseList = false;
+  let genreSelectedThreshold = 9;
+  let genreThreshold = 3;
+  let artistThreshold = 3;
+  let startingGenres = ["uk alternative hip hop", "grime", "melodic drill", "electronica", "wonky", "hyperpop", "art pop", "uk contemporary r&b", "indie soul", "drum and bass","pop", "rap", "indie rock", "lo-fi house", "ukg revival"]
+  let genreList = ["electronica", "uk alternative hip hop",
     "art pop", "wonky", "alternative r&b",
     "melodic drill", "hyperpop",
     "indie soul", "drum and bass",
-    "lo-fi house", "ukg revival"
+    "lo-fi house", "ukg revival",
+    "escape room", "pop", "indie rock", "edm", "azonto", "trip hop", "rap",
+    "italian pop", "italian hip hop", "irish hip hop", "tamil pop", "chillhop", "neo-classical", 
+    "urbano latino", "uk contemporary r&b", "london rap", "grime", "bass house", "deconstructed club", "classic dubstep", "uk drill"
   ];
 
   let colors = ["#83b5d1","#6a041d","#dbd8b3","#324a5f","#d88373"].concat(Array(0).fill("#999"));
@@ -83,24 +90,34 @@
           return counts[genre] > genreThreshold
         }
       })
-      .filter((genre, index, arr) => arr.indexOf(genre) === index);
+      .filter((genre, index, arr) => arr.indexOf(genre) === index)
+      .sort((a,b) => counts[b] > counts[a]);
     console.log(genresUnique);
+    genreData = genresUnique.map((genre, i) => (
+      {
+          name: genre,
+          checked: startingGenres.includes(genre)
+      }
+    ));
 
   });
   // CARTESIAN_INCL_END
+
+
 
 </script>
 
 
 <div class="embed-container">
-  <h3>A visual map of my Spotify listens</h3>
+  <h3>My Spotify universe</h3>
   <h4>
-    <br>Hover over an artist to see their <span class="highlighted">name</span>. Any labelled genre it belongs to will go <span class="highlighted">yellow</span>.
-    <br>Each circle is an artist, sized by the number of times I listened to their songs.
-    <br>These are all the artists I listened to at least 10 times in one year and I downloaded the data in March 2023. 
-    <br>I picked some of the most frequent and most distinct genres to label and they are centred amongst their artist bubbles.
-    <!-- Any genre associated with at least {genreThreshold} artists has a label -->
-    <br>Some artists have lots of genres assigned. Some have none or they don't make sense - those generally end up on the outer edges. 
+    <br>My listening data for the last year, as a set of moving celestial bodies in gravitation towards an orbit.
+    <br>The UK hip hop galaxy cycles round the margins, its constellations of grime and drill and 'alternative' hip hop.
+    <br>The core planetary system is a continuum from Joy Crookes and UK contemporary R&B to electronic music, passing through FKA Twigs, escape room (one of those genres completely made up by Spotify),
+    hyperpop, through Charli XCX's art pop, Bloc Party's indie rock, uncategorisable Jamie XX and Mount Kimbie to the solar system of wonky beats and its moons of lo-fi house and 'classic' dubstep.
+    <br>There were some surprises, like the UK garage revival asteroid belt. 
+    <br>Musicians without genres, or with very random ones, are the distant stars that sit around the edges.
+    <br>Hover over an artist bubble to see <span class="highlighted">their name</span> (genres they belong to will go <span class="highlighted">yellow</span> too). They are sized by song plays; I only included ones I listened to at least 3 times.
     </h4>
 
   <!-- {#if selectedArtist} -->
@@ -132,13 +149,12 @@
     
     <!-- CARTESIAN_INCL -->
     <div class='area-container {chartData ? "" : "isLoading"}'>
-      {#if chartData}
+      {#if chartData && genreData}
         <Cartesian data={chartData} {config}>
           <!-- {#if links} -->
             <ForceLayout
               bind:selectedArtist={selectedArtist}
-              bind:linkedArtists={linkedArtists}
-              genres={genresUnique}
+              genres={genreData}
               nodeStroke={"#fff"} 
             />                        
           <!-- {/if} -->
@@ -150,6 +166,13 @@
 
   </div>
 
+  {#if genreData}
+    <Checklist
+      legend={"You can pick a genre to see where it turns up on the map.<br>There's a lot... but there are fun clusters like Italian underground hip hop, and, err, brostep and tamil pop? How did that get there..."}
+      bind:entries={genreData}
+    ></Checklist>
+  {/if}
+
   <!-- <div class="source-text">Source: XXX</div> -->
 </div>
 
@@ -158,9 +181,10 @@
   .area-container,
   .col-container {
     position: relative; /* 100% turns into 100vh if you don't */
-    height: 120vw;
-    max-height: 80vh;
-    max-width: 100vw;
+    /* min-height: 50vh; */
+    height: 70vw;
+    /* max-height: 80vh; */
+    width: 100vw;
   }
   /* CARTESIAN_INCL_END */
   

@@ -1,302 +1,915 @@
-,artistName,count,genres,popularity,cluster
-0,Bloc Party,539,"['alternative dance', 'alternative rock', 'dance-punk', 'indie rock', 'indietronica', 'modern rock', 'neo-synthpop', 'new rave', 'scottish rock']",60,0
-1,Sega Bodega,223,"['deconstructed club', 'escape room', 'hyperpop', 'proto-hyperpop']",44,1
-2,Central Cee,216,['melodic drill'],78,2
-3,Gold Panda,189,"['chillwave', 'electronica', 'future garage', 'indietronica', 'microhouse', 'wonky']",40,0
-4,Young Fathers,186,"['abstract hip hop', 'art pop', 'chamber psych', 'scottish hip hop']",50,3
-5,Charli XCX,173,"['art pop', 'candy pop', 'metropopolis', 'pop', 'uk pop']",75,3
-6,Norah Jones,168,"['contemporary vocal jazz', 'jazz pop', 'neo mellow', 'vocal jazz']",71,4
-7,Clavish,163,"['uk drill', 'uk hip hop']",62,5
-8,FKA twigs,158,"['afrofuturism', 'alternative r&b', 'art pop', 'escape room', 'experimental r&b', 'trip hop']",62,1
-9,Bicep,156,"['ambient house', 'electronica']",62,6
-10,Fennec,154,[],25,83
-11,Fred again..,151,"['edm', 'house', 'stutter house']",76,7
-12,Mount Kimbie,140,"['electra', 'electronica', 'future garage', 'indie soul', 'indietronica', 'intelligent dance music', 'wonky']",51,0
-13,Jamie xx,136,"['electronica', 'future garage', 'indie soul', 'indietronica']",60,0
-14,Ross from Friends,131,"['electronica', 'future garage', 'lo-fi house']",49,6
-15,Mura Masa,129,"['channel islands indie', 'hyperpop', 'indie soul', 'vapor soul']",62,1
-16,TSHA,123,['uk house'],55,8
-17,Iglooghost,118,['proto-hyperpop'],35,1
-18,Tycho,117,"['downtempo', 'electronica', 'indietronica', 'intelligent dance music']",57,0
-19,Shygirl,116,"['alternative r&b', 'art pop', 'electra', 'escape room', 'grimewave', 'hyperpop']",57,1
-20,slowthai,113,"['uk alternative hip hop', 'uk hip hop']",61,5
-21,Japanese Breakfast,112,"['art pop', 'eugene indie', 'indie pop', 'indie rock', 'philly indie']",59,0
-22,Mr. Oizo,111,['filter house'],58,9
-23,Barry Can't Swim,111,[],56,84
-24,Kai Whiston,107,"['deconstructed club', 'proto-hyperpop']",31,1
-25,Flume,103,"['australian dance', 'australian electropop', 'australian indie', 'downtempo', 'edm', 'indietronica']",72,0
-26,Yaeji,98,"['alternative r&b', 'art pop', 'escape room', 'experimental house']",54,1
-27,Jeshi,97,['uk alternative hip hop'],44,10
-28,The Streets,97,"['birmingham hip hop', 'uk garage']",56,11
-29,Priya Ragu,95,['zurich indie'],40,12
-30,Tommy Genesis,92,"['alternative r&b', 'bc underground hip hop', 'canadian hip hop', 'canadian trap', 'escape room', 'trap queen']",61,1
-31,Joy Crookes,91,"['alternative r&b', 'uk contemporary r&b']",59,13
-32,BABii,91,[],32,85
-33,Vegyn,90,['experimental hip hop'],48,14
-34,Kojaque,89,['irish hip hop'],32,15
-35,Headie One,88,['uk hip hop'],66,5
-36,Darkstar,87,"['future garage', 'wonky']",24,16
-37,Unknown T,86,['uk hip hop'],58,5
-38,Floating Points,83,"['electronica', 'intelligent dance music', 'wonky']",49,6
-39,Xadi,83,['london rap'],33,17
-40,Tourist,79,"['chillwave', 'indie soul', 'indietronica', 'vapor soul']",55,0
-41,K-Trap,78,"['uk drill', 'uk hip hop']",59,5
-42,Hot Chip,74,"['alternative dance', 'dance rock', 'electronica', 'indie rock', 'indietronica', 'neo-synthpop', 'new rave']",54,0
-43,Jelani Blackman,74,"['london rap', 'uk alternative hip hop']",43,10
-44,Loyle Carner,73,"['indie soul', 'london rap']",65,17
-45,Sevdaliza,72,"['alternative r&b', 'art pop', 'escape room', 'persian electronic']",49,1
-46,Alfa Mist,67,"['british jazz', 'indie soul']",52,18
-47,Mall Grab,67,"['aussietronica', 'australian house', 'lo-fi house']",53,19
-48,Laurence Guy,64,"['deep house', 'float house']",48,20
-49,Arca,64,"['latin hip hop', 'reggaeton', 'trap latino', 'urbano latino']",83,21
-50,Kojey Radical,64,['uk alternative hip hop'],52,10
-51,Dave,62,"['jam band', 'neo mellow', 'pop rock']",66,4
-52,Knucks,62,"['melodic drill', 'uk alternative hip hop']",65,2
-53,Ta-ku,62,"['indie soul', 'instrumental hip hop', 'vapor twitch']",51,18
-54,Phoria,62,['brighton indie'],44,22
-55,Passion Pit,59,"['indie rock', 'indietronica', 'modern rock', 'neo-synthpop']",58,0
-56,Baby Dave,59,[],18,86
-57,Dorian Concept,56,"['progressive jazz fusion', 'wonky']",34,16
-58,Sampa the Great,54,"['alternative r&b', 'australian hip hop', 'conscious hip hop', 'escape room', 'zambian hip hop']",50,1
-59,M1llionz,53,['uk hip hop'],49,5
-60,Good Shoes,52,"['british indie rock', 'dance-punk', 'new rave']",37,0
-61,Overmono,52,['future garage'],56,16
-62,Catching Flies,52,"['downtempo', 'indie dream pop']",57,23
-63,COUCOU CHLOE,51,"['deconstructed club', 'electra', 'escape room', 'fluxwork', 'hyperpop', 'proto-hyperpop', 'spectra']",45,1
-64,The Prodigy,51,"['big beat', 'breakbeat', 'dance rock', 'hardcore techno', 'rave']",65,24
-65,Kendrick Lamar,50,"['conscious hip hop', 'hip hop', 'rap', 'west coast rap']",89,25
-66,Teebs,50,"['abstract beats', 'instrumental hip hop', 'wonky']",48,16
-67,MGMT,49,"['alternative rock', 'indie rock', 'indietronica', 'modern rock', 'rock']",73,0
-68,Kerala Dust,49,['organic electronic'],51,26
-69,Suzanne Vega,49,"['lilith', 'new wave pop', 'permanent wave', 'singer-songwriter']",56,27
-70,BOP,49,"[""children's music""]",68,28
-71,p-rallel,48,['uk alternative hip hop'],47,10
-72,Jamie T,48,"['british alternative rock', 'british indie rock']",54,29
-73,Justice,46,"['alternative dance', 'dance-punk', 'electronica', 'filter house', 'indietronica', 'new rave']",58,0
-74,Olivia Dean,44,['pop soul'],61,30
-75,Louis Culture,43,['uk alternative hip hop'],40,10
-76,Donae'o,43,"['azonto', 'grime', 'old school bassline', 'uk funky', 'uk hip hop']",47,5
-77,Elkka,42,['electra'],40,31
-78,Rachel Chinouriri,42,['uk pop'],54,32
-79,The Silhouettes Project,41,"['indie r&b', 'uk alternative hip hop']",50,10
-80,Pip Millett,41,"['alternative r&b', 'uk contemporary r&b']",54,13
-81,Machinedrum,39,"['footwork', 'future garage', 'glitch', 'glitch hop', 'halftime dnb', 'intelligent dance music', 'minimal dnb', 'wonky']",47,16
-82,Nex Cassel,38,"['italian hip hop', 'italian underground hip hop']",36,33
-83,Roy Ayers,38,"['funk', 'jazz funk', 'jazz vibraphone', 'soul']",51,34
-84,cktrl,38,[],32,87
-85,Jordy,38,['indiecoustica'],53,35
-86,Daphni,38,"['canadian house', 'electronica', 'float house', 'future garage', 'microhouse']",47,6
-87,Netsky,37,"['belgian edm', 'dancefloor dnb', 'drum and bass']",58,36
-88,Bawo,37,"['indie hip hop', 'uk alternative hip hop']",50,10
-89,Koreless,37,"['future garage', 'scottish electronic', 'weightless', 'wonky']",31,16
-90,Eva808,36,"['classic dubstep', 'deep dubstep', 'instrumental grime', 'minimal dubstep', 'neo grime']",22,37
-91,Cut Copy,36,"['alternative dance', 'australian dance', 'australian electropop', 'electronic rock', 'electronica', 'indietronica', 'neo-synthpop']",48,0
-92,Maribou State,36,"['electronica', 'future garage', 'indie soul']",64,6
-93,Biig Piig,36,"['indie soul', 'modern alternative pop']",61,18
-94,Little Simz,35,"['alternative r&b', 'escape room', 'trap queen']",62,1
-95,Lonnie Liston Smith,35,['jazz funk'],41,34
-96,Jouska,34,['oslo indie'],16,38
-97,BackRoad Gee,34,"['grime', 'uk hip hop']",48,5
-98,D-Block Europe,33,"['melodic drill', 'uk hip hop']",71,2
-99,Skrillex,33,"['brostep', 'complextro', 'edm', 'electro', 'pop dance']",77,7
-100,Actress,33,"['fluxwork', 'hauntology', 'intelligent dance music', 'microhouse', 'wonky']",44,16
-101,Burial,32,"['classic dubstep', 'electronica', 'future garage', 'hauntology', 'intelligent dance music', 'trip hop', 'uk bass', 'wonky']",50,6
-102,Jordan Stephens,32,[],37,88
-103,Mahmood,32,"['italian adult pop', 'italian pop']",60,39
-104,Mild Minds,32,['australian dance'],60,40
-105,Rihanna,32,"['barbadian pop', 'pop', 'urban contemporary']",90,41
-106,Leon Vynehall,31,"['ambient house', 'deep house', 'electronica', 'float house', 'future garage', 'microhouse', 'uk house', 'wonky']",46,6
-107,Dusky,31,"['deep house', 'future garage', 'house']",44,7
-108,SOPHIE,31,['bedroom soul'],51,42
-109,ANOHNI,31,"['art pop', 'chamber psych', 'experimental pop', 'metropopolis', 'transpop']",39,3
-110,Sam Wise,30,['uk alternative hip hop'],43,10
-111,The Mouse Outfit,30,"['manchester hip hop', 'uk alternative hip hop']",42,10
-112,Sassy 009,30,['electra'],36,31
-113,Shinichiro Yokota,29,"['japanese electronic', 'japanese house']",34,43
-114,Wesley Joseph,29,['uk alternative hip hop'],55,10
-115,Run The Jewels,29,"['alternative hip hop', 'escape room', 'hip hop', 'political hip hop']",60,1
-116,Let's Eat Grandma,28,"['art pop', 'chamber psych', 'east anglia indie']",39,3
-117,Flava D,27,"['bass house', 'old school bassline', 'ukg revival']",41,44
-118,Caroline Polachek,27,"['art pop', 'escape room', 'indie pop', 'indietronica']",63,0
-119,St. Vincent,27,"['art pop', 'etherpop', 'indie rock', 'indietronica', 'metropopolis', 'neo-synthpop']",61,0
-120,Romare,27,"['electronica', 'indie soul']",49,6
-121,Meekz,27,"['manchester hip hop', 'uk hip hop']",58,5
-122,KwolleM,26,['uk alternative hip hop'],41,10
-123,Sudan Archives,26,"['afrofuturism', 'alternative r&b', 'experimental r&b', 'indie soul', 'la pop']",54,13
-124,Röyksopp,26,"['downtempo', 'electronica', 'indietronica', 'neo-synthpop', 'trip hop']",61,0
-125,Sam Gellaitry,26,"['future bass', 'scottish electronic', 'vapor twitch']",55,45
-126,SHY FX,26,"['drum and bass', 'jungle', 'ragga jungle']",59,36
-127,Yaya Bey,26,"['alternative r&b', 'experimental r&b']",57,13
-128,Finn Foxell,26,['uk alternative hip hop'],44,10
-129,Frankie Stew and Harvey Gunn,25,['uk alternative hip hop'],50,10
-130,J Hus,25,"['afroswing', 'grime', 'uk hip hop']",65,5
-131,Alice Auer,25,[],40,89
-132,Isabella Lovestory,25,[],45,90
-133,CRO,25,"['ccm', 'christian alternative rock', 'christian music', 'worship']",59,46
-134,Kid Cudi,25,"['hip hop', 'ohio hip hop', 'pop rap', 'rap']",80,25
-135,Flying Lotus,24,"['afrofuturism', 'alternative hip hop', 'electronica', 'escape room', 'experimental hip hop', 'glitch', 'glitch hop', 'indietronica', 'instrumental hip hop', 'intelligent dance music', 'jazztronica', 'psychedelic hip hop', 'wonky']",56,0
-136,Stormzy,24,"['grime', 'uk hip hop']",71,5
-137,808INK,24,"['london rap', 'uk alternative hip hop']",37,10
-138,Fuse ODG,23,"['afrobeats', 'azonto', 'azontobeats']",61,47
-139,Ojerime,23,"['alternative r&b', 'uk contemporary r&b']",50,13
-140,Zebra Katz,23,"['escape room', 'lgbtq+ hip hop', 'vogue']",40,1
-141,Shire T,23,[],38,91
-142,Nia Archives,22,['modern jungle'],58,48
-143,Neutral Milk Hotel,22,"['alternative rock', 'chamber pop', 'elephant 6', 'indie rock', 'lo-fi', 'noise pop']",56,0
-144,Conor Albert,22,[],49,92
-145,Frederic Robinson,21,['munich electronic'],17,49
-146,Hudson Mohawke,21,"['instrumental hip hop', 'purple sound', 'scottish electronic', 'scottish hip hop', 'uk experimental electronic', 'wonky']",44,3
-147,Grove,21,[],63,93
-148,Joy Orbison,21,"['electronica', 'float house', 'future garage', 'wonky']",45,6
-149,Onoe Caponoe,21,['uk alternative hip hop'],38,10
-150,Jacques Greene,21,"['canadian electronic', 'electronica', 'future garage', 'wonky']",43,6
-151,Double Lz,21,"['uk drill', 'uk hip hop']",54,5
-152,2nd Exit,21,"['jazz rap', 'uk alternative hip hop']",43,10
-153,Pa Salieu,21,"['afroswing', 'uk alternative hip hop', 'uk hip hop']",52,5
-154,ROSALÍA,21,"['pop', 'r&b en espanol']",85,41
-155,Giancane,21,"['italian alternative', 'italian indie pop', 'rome indie']",37,50
-156,Gemma Dunleavy,20,['irish pop'],25,51
-157,Princess Nokia,20,"['alternative r&b', 'escape room', 'lgbtq+ hip hop', 'trap queen']",60,1
-158,Sammy Virji,20,"['bass house', 'bassline', 'old school bassline']",49,44
-159,Joesef,20,"['indie soul', 'uk alternative pop']",58,18
-160,Nines,20,"['grime', 'uk hip hop']",69,5
-161,Lapalux,20,"['future garage', 'wonky']",42,16
-162,Flowdan,20,['grime'],60,52
-163,Fumez The Engineer,20,"['melodic drill', 'uk drill', 'uk hip hop', 'uk melodic rap']",65,2
-164,emir taha,19,['turkish trap pop'],46,53
-165,Jack Beats,19,"['bass house', 'fidget house']",32,44
-166,Belot,19,['chill pop'],22,54
-167,Reek0,19,['uk alternative hip hop'],35,10
-168,Little Dragon,18,"['art pop', 'downtempo', 'electronica', 'gothenburg indie', 'indie soul', 'indietronica', 'neo-synthpop', 'swedish electropop', 'swedish synthpop', 'trip hop']",61,0
-169,KAYTRANADA,18,"['alternative r&b', 'escape room', 'indie soul', 'lgbtq+ hip hop']",75,1
-170,Conducta,18,"['bass house', 'old school bassline', 'ukg revival']",43,44
-171,Tom Misch,18,"['indie soul', 'jazz pop']",66,4
-172,BAYNK,18,['vapor soul'],58,55
-173,Saib,18,"['chillhop', 'japanese chillhop', 'lo-fi beats']",54,56
-174,Kwengface,17,"['uk drill', 'uk hip hop']",57,5
-175,Seb Wildblood,17,['float house'],48,20
-176,Outkast,17,"['atl hip hop', 'dirty south rap', 'hip hop', 'old school atlanta hip hop', 'rap', 'southern hip hop']",74,25
-177,Big Zuu,17,"['grime', 'uk hip hop']",43,5
-178,JPEGMAFIA,17,"['alternative hip hop', 'experimental hip hop', 'industrial hip hop', 'underground hip hop']",67,14
-179,Pearl Jam,17,"['alternative metal', 'alternative rock', 'grunge', 'permanent wave', 'rock']",74,0
-180,Blade Brown,17,"['grime', 'uk hip hop']",49,5
-181,Fetty Wap,17,"['new jersey rap', 'pop rap', 'rap', 'southern hip hop', 'trap']",70,25
-182,Massimo Pericolo,17,"['italian hip hop', 'trap metal italiana']",63,33
-183,Youngs Teflon,17,"['grime', 'uk drill', 'uk hip hop']",51,5
-184,Björk,17,"['art pop', 'electronica', 'experimental pop', 'experimental vocal', 'icelandic experimental', 'icelandic pop', 'icelandic singer-songwriter', 'metropopolis', 'permanent wave', 'trip hop']",62,3
-185,Junglepussy,17,"['alternative r&b', 'escape room', 'trap queen']",41,1
-186,Fatima Yamaha,16,['electro house'],42,57
-187,COBRAH,16,"['escape room', 'pink noise']",54,1
-188,Noisia,16,"['breakbeat', 'brostep', 'deep dnb', 'drum and bass', 'dutch dnb', 'neurofunk']",55,24
-189,Ghetts,16,"['grime', 'uk hip hop']",50,5
-190,Cecile Believe,16,"['escape room', 'hyperpop']",33,1
-191,Russ Millions,16,"['melodic drill', 'uk drill']",69,2
-192,Laila Al Habash,16,['italian indie pop'],39,50
-193,ML Buch,16,['danish indie pop'],34,58
-194,Sainté,16,['chill drill'],63,59
-195,Che Lingo,16,['uk alternative hip hop'],46,10
-196,Mona San,16,[],36,94
-197,DJ Seinfeld,16,['lo-fi house'],50,19
-198,Artemas,16,[],38,95
-199,Roots Manuva,16,"['trip hop', 'uk hip hop']",47,5
-200,Chrome Sparks,16,"['chillwave', 'indietronica', 'shimmer psych', 'vapor twitch', 'wonky']",50,0
-201,Kofi Stone,15,['uk alternative hip hop'],53,10
-202,Mowgs,15,"['birmingham hip hop', 'melodic drill', 'uk hip hop']",46,2
-203,Crookers,15,['fidget house'],62,60
-204,Roll Deep,15,['grime'],41,52
-205,The Rolling Stones,15,"['album rock', 'british invasion', 'classic rock', 'rock']",78,61
-206,JXMESC,15,['uk alternative hip hop'],38,10
-207,Cakes da Killa,15,"['escape room', 'lgbtq+ hip hop', 'nyc rap', 'vogue']",35,1
-208,Myd,14,"['filter house', 'french indie pop', 'french indietronica', 'new french touch']",55,9
-209,President T,14,['grime'],33,52
-210,OFB,14,"['uk drill', 'uk hip hop']",52,5
-211,Mushkilla,14,[],30,96
-212,⣎⡇ꉺლ༽இ•̛)ྀ◞ ༎ຶ ༽ৣৢ؞ৢ؞ؖ ꉺლ,14,['experimental electronic'],40,62
-213,Patrice Rushen,14,"['disco', 'funk', 'jazz funk', 'post-disco', 'quiet storm', 'soul']",55,34
-214,Four Tet,14,"['electronica', 'folktronica', 'indietronica', 'intelligent dance music', 'trip hop']",63,0
-215,Tion Wayne,14,"['london rap', 'uk hip hop']",70,5
-216,Bombay Bicycle Club,14,"['british indie rock', 'chamber pop', 'indie rock', 'indietronica', 'modern rock', 'shimmer pop', 'stomp and holler']",57,0
-217,Model Man,13,['uk dance'],46,63
-218,Golin,13,"['glitch pop', 'hyperpop']",27,1
-219,TOKiMONSTA,13,"['chillwave', 'electra', 'indietronica', 'instrumental hip hop', 'wonky']",54,0
-220,Poor Colour Palette,13,[],0,97
-221,The Bug,13,"['early synthpop', 'new wave pop', 'synthpop', 'zolo']",57,27
-222,Tei Shi,13,"['alternative r&b', 'art pop', 'escape room', 'gauze pop', 'shimmer psych', 'spectra', 'vapor pop']",48,1
-223,The Darker the Shadow the Brighter the Light,13,['birmingham hip hop'],22,11
-224,salute,13,['ukg revival'],51,44
-225,Oliver Sim,13,[],45,98
-226,Grace Ives,13,['experimental indie'],47,64
-227,Samuel Organ,13,[],30,99
-228,iamamiwhoami,13,"['dark pop', 'metropopolis', 'neo-synthpop', 'swedish electropop', 'swedish synthpop']",39,0
-229,Swindle,13,['purple sound'],38,65
-230,CASISDEAD,13,"['grime', 'uk alternative hip hop']",41,10
-231,Klaxons,12,"['alternative dance', 'dance-punk', 'indie rock', 'modern rock', 'neo-synthpop', 'new rave']",50,0
-232,Kilo Kish,12,"['alternative r&b', 'escape room']",47,1
-233,Magnetic Man,12,['classic dubstep'],37,37
-234,SEVEN 7oo,12,['drill italiana'],47,66
-235,JAY1,12,['uk hip hop'],60,5
-236,ENNY,12,['alternative r&b'],55,13
-237,GAIKA,12,"['deconstructed club', 'fluxwork', 'grimewave', 'vogue']",34,1
-238,AJ Tracey,12,"['grime', 'uk hip hop', 'ukg revival']",67,5
-239,Daddy Lumba,12,"['azonto', 'hiplife']",40,47
-240,Childish Gambino,12,"['atl hip hop', 'hip hop', 'rap']",79,25
-241,Kode9,12,"['classic dubstep', 'footwork', 'future garage', 'intelligent dance music', 'scottish electronic', 'uk bass', 'wonky']",26,16
-242,Caribou,12,"['alternative dance', 'art pop', 'electronica', 'folktronica', 'indietronica', 'intelligent dance music', 'trip hop']",56,0
-243,Uffie,12,"['dance-punk', 'electro-pop francais', 'electroclash', 'electrofox', 'new rave']",39,0
-244,Moderat,12,"['electronica', 'indietronica']",57,0
-245,Chase & Status,12,"['dancefloor dnb', 'drum and bass', 'uk dance']",61,36
-246,Arlo Parks,12,"['indie soul', 'uk contemporary r&b']",64,13
-247,M¥SS KETA,12,"['italian indie pop', 'italian pop']",49,39
-248,Hercules & Love Affair,12,"['alternative dance', 'electronica', 'indietronica', 'neo-synthpop', 'new rave']",45,0
-249,JBEE,11,"['chill drill', 'melodic drill']",61,2
-250,Chase Icon,11,['pink noise'],43,67
-251,Baths,11,"['chillwave', 'indietronica', 'shimmer pop', 'wonky']",38,0
-252,Ishmael Ensemble,11,"['experimental jazz', 'uk contemporary jazz']",42,68
-253,NERO,11,"['complextro', 'edm', 'electro house', 'melodic dubstep']",55,7
-254,Jadu Heart,11,"['indie soul', 'vapor soul']",55,18
-255,Erika de Casier,11,"['alternative r&b', 'scandinavian r&b']",44,13
-256,01099,11,['german hip hop'],69,69
-257,Octavian,11,"['afroswing', 'london rap', 'uk hip hop']",54,5
-258,piri,11,[],57,100
-259,Etta Bond,11,"['alternative r&b', 'uk contemporary r&b']",42,13
-260,Fredo,11,"['baton rouge rap', 'memphis hip hop']",58,70
-261,HAZEY,11,[],38,101
-262,French The Kid,11,"['chill drill', 'melodic drill', 'uk hip hop']",63,2
-263,myst milano.,11,[],25,102
-264,Giggs,11,"['grime', 'london rap', 'uk hip hop']",60,5
-265,Erland Cooper,11,['neo-classical'],52,71
-266,Jungle,11,"['indie soul', 'indietronica', 'uk contemporary r&b']",68,0
-267,Dom & Roland,11,"['darkstep', 'drum and bass', 'drumfunk', 'neurofunk', 'uk dnb']",25,36
-268,Logic1000,11,['ukg revival'],48,44
-269,박혜진 Park Hye Jin,11,['korean dream pop'],42,72
-270,Neil Young,11,"['canadian singer-songwriter', 'classic canadian rock', 'classic rock', 'mellow gold', 'permanent wave', 'rock', 'roots rock', 'singer-songwriter']",59,27
-271,Barney Artist,11,"['indie soul', 'uk alternative hip hop']",45,10
-272,Baby Gang,11,['trap italiana'],74,73
-273,Dua Saleh,11,"['alternative r&b', 'minnesota hip hop', 'sudanese pop']",43,13
-274,Totally Enormous Extinct Dinosaurs,10,"['alternative dance', 'indietronica', 'nu disco', 'oxford indie']",51,0
-275,Metronomy,10,"['alternative dance', 'electronica', 'indietronica', 'neo-synthpop', 'new rave', 'socal pop punk']",62,0
-276,Nemzzz,10,"['manchester hip hop', 'melodic drill']",61,2
-277,Abra Cadabra,10,"['grime', 'uk drill', 'uk hip hop']",60,5
-278,Hervé,10,['musique guadeloupe'],32,74
-279,SL,10,"['brooklyn drill', 'nyc rap']",76,75
-280,Greentea Peng,10,"['alternative r&b', 'uk contemporary r&b']",56,13
-281,Nilüfer Yanya,10,"['art pop', 'uk alternative pop']",49,3
-282,Dutta,10,['uk dnb'],31,76
-283,Giraffage,10,"['chillwave', 'future bass', 'vapor twitch']",47,45
-284,Patrick Holland,10,"['canadian electronic', 'canadian house', 'float house', 'lo-fi house']",45,19
-285,Nosaj Thing,10,"['chillwave', 'electronica', 'future garage', 'glitch hop', 'indietronica', 'intelligent dance music', 'wonky']",47,0
-286,Armani Doc,10,['italian underground hip hop'],24,33
-287,Anz,10,[],48,103
-288,DARGZ,10,[],51,104
-289,Obongjayar,10,['experimental r&b'],50,77
-290,Arivu,10,"['desi hip hop', 'tamil pop']",53,78
-291,Wretch 32,10,"['grime', 'uk hip hop']",55,5
-292,O'Flynn,10,"['float house', 'future garage']",44,16
-293,EASYFUN,10,"['escape room', 'hyperpop', 'metropopolis', 'proto-hyperpop']",29,1
-294,Royalston,10,"['deep liquid bass', 'liquid funk']",30,79
-295,Soft Blade,10,['russian electronic'],39,80
-296,Big Joanie,10,"['black punk', 'bubblegrunge', 'queercore', 'riot grrrl']",29,81
-297,Kobe JT,10,"['bristol electronic', 'ukg revival']",29,44
-298,Clark,10,"['abstract', 'electronica', 'intelligent dance music', 'wonky']",47,6
-299,Kuedo,10,"['footwork', 'purple sound', 'wonky']",26,16
-300,Koffee,10,"['dancehall', 'dancehall queen', 'jamaican dancehall']",61,82
+,artistName,count,genres,popularity
+0,Bloc Party,539,"['alternative dance', 'alternative rock', 'dance-punk', 'indie rock', 'indietronica', 'modern rock', 'neo-synthpop', 'new rave', 'scottish rock']",60
+1,Sega Bodega,223,"['deconstructed club', 'escape room', 'hyperpop', 'proto-hyperpop']",44
+2,Central Cee,216,['melodic drill'],79
+3,Gold Panda,189,"['chillwave', 'electronica', 'future garage', 'indietronica', 'microhouse', 'wonky']",40
+4,Young Fathers,186,"['abstract hip hop', 'art pop', 'chamber psych', 'scottish hip hop']",50
+5,Charli XCX,173,"['art pop', 'candy pop', 'metropopolis', 'pop', 'uk pop']",75
+6,Norah Jones,168,"['contemporary vocal jazz', 'jazz pop', 'neo mellow', 'vocal jazz']",72
+7,Clavish,163,"['uk drill', 'uk hip hop']",62
+8,FKA twigs,158,"['afrofuturism', 'alternative r&b', 'art pop', 'escape room', 'experimental r&b', 'trip hop']",62
+9,Bicep,156,"['ambient house', 'electronica']",62
+10,Fennec,154,[],25
+11,Fred again..,151,"['edm', 'house', 'stutter house']",76
+12,Mount Kimbie,140,"['electra', 'electronica', 'future garage', 'indie soul', 'indietronica', 'intelligent dance music', 'wonky']",51
+13,Jamie xx,136,"['electronica', 'future garage', 'indie soul', 'indietronica']",60
+14,Ross from Friends,131,"['electronica', 'future garage', 'lo-fi house']",49
+15,Mura Masa,129,"['channel islands indie', 'hyperpop', 'indie soul', 'vapor soul']",62
+16,TSHA,123,['uk house'],55
+17,Iglooghost,118,['proto-hyperpop'],35
+18,Tycho,117,"['downtempo', 'electronica', 'indietronica', 'intelligent dance music']",57
+19,Shygirl,116,"['alternative r&b', 'art pop', 'electra', 'escape room', 'grimewave', 'hyperpop']",57
+20,slowthai,113,"['uk alternative hip hop', 'uk hip hop']",61
+21,Japanese Breakfast,112,"['art pop', 'eugene indie', 'indie pop', 'indie rock', 'philly indie']",59
+22,Mr. Oizo,111,['filter house'],58
+23,Barry Can't Swim,111,[],56
+24,Kai Whiston,107,"['deconstructed club', 'proto-hyperpop']",30
+25,Flume,103,"['australian dance', 'australian electropop', 'australian indie', 'downtempo', 'edm', 'indietronica']",72
+26,Yaeji,98,"['alternative r&b', 'art pop', 'escape room', 'experimental house']",54
+27,Jeshi,97,['uk alternative hip hop'],43
+28,The Streets,97,"['birmingham hip hop', 'uk garage']",56
+29,Priya Ragu,95,['zurich indie'],40
+30,Tommy Genesis,92,"['alternative r&b', 'bc underground hip hop', 'canadian hip hop', 'canadian trap', 'escape room', 'trap queen']",61
+31,Joy Crookes,91,"['alternative r&b', 'uk contemporary r&b']",59
+32,BABii,91,[],32
+33,Vegyn,90,['experimental hip hop'],47
+34,Kojaque,89,['irish hip hop'],32
+35,Headie One,88,['uk hip hop'],66
+36,Darkstar,87,"['future garage', 'wonky']",24
+37,Unknown T,86,['uk hip hop'],58
+38,Floating Points,83,"['electronica', 'intelligent dance music', 'wonky']",49
+39,Xadi,83,['london rap'],33
+40,Tourist,79,"['chillwave', 'indie soul', 'indietronica', 'vapor soul']",56
+41,K-Trap,78,"['uk drill', 'uk hip hop']",59
+42,Hot Chip,74,"['alternative dance', 'dance rock', 'electronica', 'indie rock', 'indietronica', 'neo-synthpop', 'new rave']",54
+43,Jelani Blackman,74,"['london rap', 'uk alternative hip hop']",43
+44,Loyle Carner,73,"['indie soul', 'london rap']",65
+45,Sevdaliza,72,"['alternative r&b', 'art pop', 'escape room', 'persian electronic']",49
+46,Alfa Mist,67,"['british jazz', 'indie soul']",51
+47,Mall Grab,67,"['aussietronica', 'australian house', 'lo-fi house']",53
+48,Laurence Guy,64,"['deep house', 'float house']",48
+49,Arca,64,"['latin hip hop', 'reggaeton', 'trap latino', 'urbano latino']",83
+50,Kojey Radical,64,['uk alternative hip hop'],52
+51,Dave,62,"['jam band', 'neo mellow', 'pop rock']",66
+52,Knucks,62,"['melodic drill', 'uk alternative hip hop']",65
+53,Ta-ku,62,"['indie soul', 'instrumental hip hop', 'vapor twitch']",51
+54,Phoria,62,['brighton indie'],44
+55,Passion Pit,59,"['indie rock', 'indietronica', 'modern rock', 'neo-synthpop', 'shimmer pop']",58
+56,Baby Dave,59,[],18
+57,Dorian Concept,56,"['progressive jazz fusion', 'wonky']",34
+58,Sampa the Great,54,"['alternative r&b', 'australian hip hop', 'conscious hip hop', 'escape room', 'zambian hip hop']",50
+59,M1llionz,53,['uk hip hop'],49
+60,Good Shoes,52,"['british indie rock', 'dance-punk', 'new rave']",37
+61,Overmono,52,['future garage'],56
+62,Catching Flies,52,"['downtempo', 'indie dream pop']",57
+63,COUCOU CHLOE,51,"['deconstructed club', 'electra', 'escape room', 'fluxwork', 'hyperpop', 'proto-hyperpop', 'spectra']",45
+64,The Prodigy,51,"['big beat', 'breakbeat', 'dance rock', 'hardcore techno', 'rave']",65
+65,Kendrick Lamar,50,"['conscious hip hop', 'hip hop', 'rap', 'west coast rap']",89
+66,Teebs,50,"['abstract beats', 'instrumental hip hop', 'wonky']",48
+67,MGMT,49,"['alternative rock', 'indie rock', 'indietronica', 'modern rock', 'rock']",73
+68,Kerala Dust,49,['organic electronic'],51
+69,Suzanne Vega,49,"['lilith', 'new wave pop', 'permanent wave', 'singer-songwriter']",56
+70,BOP,49,"[""children's music""]",68
+71,p-rallel,48,['uk alternative hip hop'],47
+72,Jamie T,48,"['british alternative rock', 'british indie rock']",54
+73,Justice,46,"['alternative dance', 'dance-punk', 'electronica', 'filter house', 'indietronica', 'new rave']",58
+74,Olivia Dean,44,['pop soul'],61
+75,Louis Culture,43,['uk alternative hip hop'],39
+76,Donae'o,43,"['azonto', 'grime', 'old school bassline', 'uk funky', 'uk hip hop']",47
+77,Elkka,42,['electra'],40
+78,Rachel Chinouriri,42,['uk pop'],54
+79,The Silhouettes Project,41,"['indie r&b', 'uk alternative hip hop']",50
+80,Pip Millett,41,"['alternative r&b', 'uk contemporary r&b']",54
+81,Machinedrum,39,"['footwork', 'future garage', 'glitch', 'glitch hop', 'halftime dnb', 'intelligent dance music', 'minimal dnb', 'wonky']",47
+82,Nex Cassel,38,"['italian hip hop', 'italian underground hip hop']",36
+83,Roy Ayers,38,"['funk', 'jazz funk', 'jazz vibraphone', 'soul']",51
+84,cktrl,38,[],32
+85,Jordy,38,['indiecoustica'],53
+86,Daphni,38,"['canadian house', 'electronica', 'float house', 'future garage', 'microhouse']",47
+87,Netsky,37,"['belgian edm', 'dancefloor dnb', 'drum and bass']",58
+88,Bawo,37,"['indie hip hop', 'uk alternative hip hop']",50
+89,Koreless,37,"['future garage', 'scottish electronic', 'weightless', 'wonky']",31
+90,Eva808,36,"['classic dubstep', 'deep dubstep', 'instrumental grime', 'minimal dubstep', 'neo grime']",21
+91,Cut Copy,36,"['alternative dance', 'australian dance', 'australian electropop', 'electronic rock', 'electronica', 'indietronica', 'neo-synthpop']",48
+92,Maribou State,36,"['electronica', 'future garage', 'indie soul']",64
+93,Biig Piig,36,"['indie soul', 'modern alternative pop']",60
+94,Little Simz,35,"['alternative r&b', 'escape room', 'trap queen']",61
+95,Lonnie Liston Smith,35,['jazz funk'],41
+96,Jouska,34,['oslo indie'],16
+97,BackRoad Gee,34,"['grime', 'uk hip hop']",48
+98,D-Block Europe,33,"['melodic drill', 'uk hip hop']",71
+99,Skrillex,33,"['brostep', 'complextro', 'edm', 'electro', 'pop dance']",77
+100,Actress,33,"['fluxwork', 'hauntology', 'intelligent dance music', 'microhouse', 'wonky']",44
+101,Burial,32,"['classic dubstep', 'electronica', 'future garage', 'hauntology', 'intelligent dance music', 'trip hop', 'uk bass', 'wonky']",50
+102,Jordan Stephens,32,[],37
+103,Mahmood,32,"['italian adult pop', 'italian pop']",60
+104,Mild Minds,32,['australian dance'],60
+105,Rihanna,32,"['barbadian pop', 'pop', 'urban contemporary']",89
+106,Leon Vynehall,31,"['ambient house', 'deep house', 'electronica', 'float house', 'future garage', 'microhouse', 'uk house', 'wonky']",46
+107,Dusky,31,"['deep house', 'future garage', 'house']",44
+108,SOPHIE,31,['bedroom soul'],51
+109,ANOHNI,31,"['art pop', 'chamber psych', 'experimental pop', 'metropopolis', 'transpop']",39
+110,Sam Wise,30,['uk alternative hip hop'],43
+111,The Mouse Outfit,30,"['manchester hip hop', 'uk alternative hip hop']",42
+112,Sassy 009,30,['electra'],36
+113,Shinichiro Yokota,29,"['japanese electronic', 'japanese house']",34
+114,Wesley Joseph,29,['uk alternative hip hop'],55
+115,Run The Jewels,29,"['alternative hip hop', 'escape room', 'hip hop', 'political hip hop']",60
+116,Let's Eat Grandma,28,"['art pop', 'chamber psych', 'east anglia indie']",38
+117,Flava D,27,"['bass house', 'old school bassline', 'ukg revival']",41
+118,Caroline Polachek,27,"['art pop', 'escape room', 'indie pop', 'indietronica']",63
+119,St. Vincent,27,"['art pop', 'etherpop', 'indie rock', 'indietronica', 'metropopolis', 'neo-synthpop']",61
+120,Romare,27,"['electronica', 'indie soul']",49
+121,Meekz,27,"['manchester hip hop', 'uk hip hop']",58
+122,KwolleM,26,['uk alternative hip hop'],41
+123,Sudan Archives,26,"['afrofuturism', 'alternative r&b', 'experimental r&b', 'indie soul', 'la pop']",54
+124,Röyksopp,26,"['downtempo', 'electronica', 'indietronica', 'neo-synthpop', 'trip hop']",61
+125,Sam Gellaitry,26,"['future bass', 'scottish electronic', 'vapor twitch']",55
+126,SHY FX,26,"['drum and bass', 'jungle', 'ragga jungle']",59
+127,Yaya Bey,26,"['alternative r&b', 'experimental r&b']",57
+128,Finn Foxell,26,['uk alternative hip hop'],44
+129,Frankie Stew and Harvey Gunn,25,['uk alternative hip hop'],50
+130,J Hus,25,"['afroswing', 'grime', 'uk hip hop']",65
+131,Alice Auer,25,[],40
+132,Isabella Lovestory,25,[],45
+133,CRO,25,"['ccm', 'christian alternative rock', 'christian music', 'worship']",59
+134,Kid Cudi,25,"['hip hop', 'ohio hip hop', 'pop rap', 'rap']",80
+135,Flying Lotus,24,"['afrofuturism', 'alternative hip hop', 'electronica', 'escape room', 'experimental hip hop', 'glitch', 'glitch hop', 'indietronica', 'instrumental hip hop', 'intelligent dance music', 'jazztronica', 'psychedelic hip hop', 'wonky']",56
+136,Stormzy,24,"['grime', 'uk hip hop']",71
+137,808INK,24,"['london rap', 'uk alternative hip hop']",37
+138,Fuse ODG,23,"['afrobeats', 'azonto']",61
+139,Ojerime,23,"['alternative r&b', 'uk contemporary r&b']",50
+140,Zebra Katz,23,"['escape room', 'lgbtq+ hip hop', 'vogue']",40
+141,Shire T,23,[],38
+142,Nia Archives,22,['modern jungle'],58
+143,Neutral Milk Hotel,22,"['alternative rock', 'chamber pop', 'elephant 6', 'indie rock', 'lo-fi', 'noise pop']",56
+144,Conor Albert,22,[],49
+145,Frederic Robinson,21,['munich electronic'],17
+146,Hudson Mohawke,21,"['instrumental hip hop', 'purple sound', 'scottish electronic', 'scottish hip hop', 'uk experimental electronic', 'wonky']",44
+147,Grove,21,[],63
+148,Joy Orbison,21,"['electronica', 'float house', 'future garage', 'wonky']",45
+149,Onoe Caponoe,21,['uk alternative hip hop'],37
+150,Jacques Greene,21,"['canadian electronic', 'electronica', 'future garage', 'wonky']",43
+151,Double Lz,21,"['uk drill', 'uk hip hop']",54
+152,2nd Exit,21,"['jazz rap', 'uk alternative hip hop']",43
+153,Pa Salieu,21,"['afroswing', 'uk alternative hip hop', 'uk hip hop']",52
+154,ROSALÍA,21,"['pop', 'r&b en espanol']",85
+155,Giancane,21,"['italian alternative', 'italian indie pop', 'rome indie']",37
+156,Gemma Dunleavy,20,['irish pop'],25
+157,Princess Nokia,20,"['alternative r&b', 'escape room', 'lgbtq+ hip hop', 'trap queen']",60
+158,Sammy Virji,20,"['bass house', 'bassline', 'old school bassline']",49
+159,Joesef,20,"['indie soul', 'uk alternative pop']",58
+160,Nines,20,"['grime', 'uk hip hop']",68
+161,Lapalux,20,"['future garage', 'wonky']",42
+162,Flowdan,20,['grime'],60
+163,Fumez The Engineer,20,"['melodic drill', 'uk drill', 'uk hip hop', 'uk melodic rap']",65
+164,emir taha,19,['turkish trap pop'],45
+165,Jack Beats,19,"['bass house', 'fidget house']",32
+166,Belot,19,['chill pop'],23
+167,Reek0,19,['uk alternative hip hop'],35
+168,Little Dragon,18,"['art pop', 'downtempo', 'electronica', 'gothenburg indie', 'indie soul', 'indietronica', 'neo-synthpop', 'swedish electropop', 'swedish synthpop', 'trip hop']",61
+169,KAYTRANADA,18,"['alternative r&b', 'escape room', 'indie soul', 'lgbtq+ hip hop']",75
+170,Conducta,18,"['bass house', 'old school bassline', 'ukg revival']",42
+171,Tom Misch,18,"['indie soul', 'jazz pop']",66
+172,BAYNK,18,['vapor soul'],58
+173,Saib,18,"['chillhop', 'japanese chillhop', 'lo-fi beats']",54
+174,Kwengface,17,"['uk drill', 'uk hip hop']",57
+175,Seb Wildblood,17,['float house'],48
+176,Outkast,17,"['atl hip hop', 'dirty south rap', 'hip hop', 'old school atlanta hip hop', 'rap', 'southern hip hop']",74
+177,Big Zuu,17,"['grime', 'uk hip hop']",43
+178,JPEGMAFIA,17,"['alternative hip hop', 'experimental hip hop', 'industrial hip hop', 'underground hip hop']",67
+179,Pearl Jam,17,"['alternative metal', 'alternative rock', 'grunge', 'permanent wave', 'rock']",74
+180,Blade Brown,17,[],37
+181,Fetty Wap,17,"['new jersey rap', 'pop rap', 'rap', 'southern hip hop', 'trap']",70
+182,Massimo Pericolo,17,"['italian hip hop', 'trap metal italiana']",63
+183,Youngs Teflon,17,"['grime', 'uk drill', 'uk hip hop']",51
+184,Björk,17,"['art pop', 'electronica', 'experimental pop', 'experimental vocal', 'icelandic experimental', 'icelandic pop', 'icelandic singer-songwriter', 'metropopolis', 'permanent wave', 'trip hop']",62
+185,Junglepussy,17,"['alternative r&b', 'escape room', 'trap queen']",41
+186,Fatima Yamaha,16,['electro house'],42
+187,COBRAH,16,"['escape room', 'pink noise']",54
+188,Noisia,16,"['breakbeat', 'brostep', 'deep dnb', 'drum and bass', 'dutch dnb', 'neurofunk']",55
+189,Ghetts,16,"['grime', 'uk hip hop']",50
+190,Cecile Believe,16,"['escape room', 'hyperpop']",33
+191,Russ Millions,16,"['melodic drill', 'uk drill']",69
+192,Laila Al Habash,16,['italian indie pop'],39
+193,ML Buch,16,['danish indie pop'],34
+194,Sainté,16,['chill drill'],63
+195,Che Lingo,16,['uk alternative hip hop'],46
+196,Mona San,16,[],36
+197,DJ Seinfeld,16,['lo-fi house'],50
+198,Artemas,16,[],38
+199,Roots Manuva,16,"['trip hop', 'uk hip hop']",47
+200,Chrome Sparks,16,"['chillwave', 'indietronica', 'shimmer psych', 'vapor twitch', 'wonky']",50
+201,Kofi Stone,15,['uk alternative hip hop'],53
+202,Mowgs,15,"['birmingham hip hop', 'melodic drill', 'uk hip hop']",46
+203,Crookers,15,['fidget house'],62
+204,Roll Deep,15,['grime'],41
+205,The Rolling Stones,15,"['album rock', 'british invasion', 'classic rock', 'rock']",78
+206,JXMESC,15,['uk alternative hip hop'],37
+207,Cakes da Killa,15,"['escape room', 'lgbtq+ hip hop', 'nyc rap', 'vogue']",35
+208,Myd,14,"['filter house', 'french indie pop', 'french indietronica', 'new french touch']",55
+209,President T,14,['grime'],33
+210,OFB,14,"['atl hip hop', 'rap', 'trap']",79
+211,Mushkilla,14,[],29
+212,⣎⡇ꉺლ༽இ•̛)ྀ◞ ༎ຶ ༽ৣৢ؞ৢ؞ؖ ꉺლ,14,['experimental electronic'],40
+213,Patrice Rushen,14,"['disco', 'funk', 'jazz funk', 'post-disco', 'quiet storm', 'soul']",55
+214,Four Tet,14,"['electronica', 'folktronica', 'indietronica', 'intelligent dance music', 'trip hop']",63
+215,Tion Wayne,14,"['london rap', 'uk hip hop']",69
+216,Bombay Bicycle Club,14,"['british indie rock', 'chamber pop', 'indie rock', 'indietronica', 'modern rock', 'shimmer pop', 'stomp and holler']",57
+217,Model Man,13,['uk dance'],46
+218,Golin,13,"['glitch pop', 'hyperpop']",26
+219,TOKiMONSTA,13,"['chillwave', 'electra', 'indietronica', 'instrumental hip hop', 'wonky']",54
+220,Poor Colour Palette,13,[],0
+221,The Bug,13,"['early synthpop', 'new wave pop', 'synthpop', 'zolo']",57
+222,Tei Shi,13,"['alternative r&b', 'art pop', 'escape room', 'gauze pop', 'shimmer psych', 'spectra', 'vapor pop']",48
+223,The Darker the Shadow the Brighter the Light,13,['birmingham hip hop'],21
+224,salute,13,['ukg revival'],51
+225,Oliver Sim,13,[],45
+226,Grace Ives,13,['experimental indie'],47
+227,Samuel Organ,13,[],30
+228,iamamiwhoami,13,"['dark pop', 'metropopolis', 'neo-synthpop', 'swedish electropop', 'swedish synthpop']",39
+229,Swindle,13,['purple sound'],38
+230,CASISDEAD,13,"['grime', 'uk alternative hip hop']",40
+231,Klaxons,12,"['alternative dance', 'dance-punk', 'indie rock', 'modern rock', 'neo-synthpop', 'new rave']",50
+232,Kilo Kish,12,"['alternative r&b', 'escape room']",47
+233,Magnetic Man,12,['classic dubstep'],37
+234,SEVEN 7oo,12,['drill italiana'],47
+235,JAY1,12,['uk hip hop'],60
+236,ENNY,12,['alternative r&b'],55
+237,GAIKA,12,"['deconstructed club', 'fluxwork', 'grimewave', 'vogue']",34
+238,AJ Tracey,12,"['grime', 'uk hip hop', 'ukg revival']",67
+239,Daddy Lumba,12,"['azonto', 'hiplife']",40
+240,Childish Gambino,12,"['atl hip hop', 'hip hop', 'rap']",79
+241,Kode9,12,"['classic dubstep', 'footwork', 'future garage', 'intelligent dance music', 'scottish electronic', 'uk bass', 'wonky']",26
+242,Caribou,12,"['alternative dance', 'art pop', 'electronica', 'folktronica', 'indietronica', 'intelligent dance music', 'trip hop']",56
+243,Uffie,12,"['dance-punk', 'electro-pop francais', 'electroclash', 'electrofox', 'escape room', 'new rave']",39
+244,Moderat,12,"['electronica', 'indietronica']",57
+245,Chase & Status,12,"['dancefloor dnb', 'drum and bass', 'uk dance']",60
+246,Arlo Parks,12,"['indie soul', 'uk contemporary r&b']",64
+247,M¥SS KETA,12,"['italian indie pop', 'italian pop']",49
+248,Hercules & Love Affair,12,"['alternative dance', 'electronica', 'indietronica', 'neo-synthpop', 'new rave']",45
+249,JBEE,11,"['chill drill', 'melodic drill']",61
+250,Chase Icon,11,['pink noise'],43
+251,Baths,11,"['chillwave', 'indietronica', 'shimmer pop', 'wonky']",38
+252,Ishmael Ensemble,11,"['experimental jazz', 'uk contemporary jazz']",42
+253,NERO,11,"['complextro', 'edm', 'electro house', 'melodic dubstep']",55
+254,Jadu Heart,11,"['indie soul', 'vapor soul']",55
+255,Erika de Casier,11,"['alternative r&b', 'scandinavian r&b']",44
+256,01099,11,['german hip hop'],69
+257,Octavian,11,"['afroswing', 'london rap', 'uk hip hop']",54
+258,piri,11,[],57
+259,Etta Bond,11,"['alternative r&b', 'uk contemporary r&b']",42
+260,Fredo,11,"['baton rouge rap', 'memphis hip hop']",58
+261,HAZEY,11,[],38
+262,French The Kid,11,"['chill drill', 'melodic drill', 'uk hip hop']",63
+263,myst milano.,11,[],25
+264,Giggs,11,"['grime', 'london rap', 'uk hip hop']",60
+265,Erland Cooper,11,['neo-classical'],52
+266,Jungle,11,"['indie soul', 'indietronica', 'uk contemporary r&b']",68
+267,Dom & Roland,11,"['darkstep', 'drum and bass', 'drumfunk', 'neurofunk', 'uk dnb']",25
+268,Logic1000,11,['ukg revival'],48
+269,박혜진 Park Hye Jin,11,['korean dream pop'],42
+270,Neil Young,11,"['canadian singer-songwriter', 'classic canadian rock', 'classic rock', 'mellow gold', 'permanent wave', 'rock', 'roots rock', 'singer-songwriter']",59
+271,Barney Artist,11,"['indie soul', 'uk alternative hip hop']",44
+272,Baby Gang,11,['trap italiana'],75
+273,Dua Saleh,11,"['alternative r&b', 'minnesota hip hop', 'sudanese pop']",43
+274,Totally Enormous Extinct Dinosaurs,10,"['alternative dance', 'indietronica', 'nu disco', 'oxford indie']",51
+275,Metronomy,10,"['alternative dance', 'electronica', 'indietronica', 'neo-synthpop', 'new rave', 'socal pop punk']",61
+276,Nemzzz,10,"['manchester hip hop', 'melodic drill']",61
+277,Abra Cadabra,10,"['uk drill', 'uk hip hop']",59
+278,Hervé,10,['musique guadeloupe'],32
+279,SL,10,"['brooklyn drill', 'nyc rap']",76
+280,Greentea Peng,10,"['alternative r&b', 'uk contemporary r&b']",56
+281,Nilüfer Yanya,10,"['art pop', 'uk alternative pop']",48
+282,Dutta,10,['uk dnb'],31
+283,Giraffage,10,"['chillwave', 'future bass', 'vapor twitch']",47
+284,Patrick Holland,10,"['canadian electronic', 'canadian house', 'float house', 'lo-fi house']",45
+285,Nosaj Thing,10,"['chillwave', 'electronica', 'future garage', 'glitch hop', 'indietronica', 'intelligent dance music', 'wonky']",47
+286,Armani Doc,10,['italian underground hip hop'],24
+287,Anz,10,[],48
+288,DARGZ,10,[],51
+289,Obongjayar,10,['experimental r&b'],50
+290,Arivu,10,"['desi hip hop', 'tamil pop']",54
+291,Wretch 32,10,"['grime', 'uk hip hop']",55
+292,O'Flynn,10,"['float house', 'future garage']",44
+293,EASYFUN,10,"['escape room', 'hyperpop', 'metropopolis', 'proto-hyperpop']",29
+294,Royalston,10,"['deep liquid bass', 'liquid funk']",30
+295,Soft Blade,10,['russian electronic'],39
+296,Big Joanie,10,"['black punk', 'bubblegrunge', 'queercore', 'riot grrrl']",29
+297,Kobe JT,10,"['bristol electronic', 'ukg revival']",28
+298,Clark,10,"['dance pop', 'pop', 'talent show']",74
+299,Kuedo,10,"['footwork', 'purple sound', 'wonky']",26
+300,Koffee,10,"['dancehall', 'dancehall queen', 'jamaican dancehall']",61
+301,Summers Sons,9,['uk alternative hip hop'],47
+302,Aitch,9,"['manchester hip hop', 'uk hip hop']",69
+303,Rancore,9,"['italian hip hop', 'italian underground hip hop']",48
+304,Jetson,9,[],55
+305,Jaykae,9,"['birmingham grime', 'birmingham hip hop', 'grime', 'uk hip hop']",56
+306,Eartheater,9,"['art pop', 'electra', 'escape room', 'spectra']",48
+307,Gorillaz,9,"['alternative hip hop', 'modern rock', 'rock']",80
+308,Wet,9,"['crank wave', 'indie rock']",62
+309,Steel Banglez,9,"['afroswing', 'birmingham grime', 'grime', 'london rap', 'uk hip hop']",63
+310,Feux,9,['uk alternative hip hop'],38
+311,Jim Perkins,9,"['compositional ambient', 'neo-classical']",53
+312,Scorcher,9,"['grime', 'uk hip hop']",33
+313,FRANKIIE,9,['vancouver indie'],17
+314,Berna,9,"['classic soundtrack', 'soundtrack']",50
+315,Naibu,9,"['drumfunk', 'french dnb', 'liquid funk']",20
+316,Potter Payper,9,"['grime', 'uk hip hop']",63
+317,Skepta,9,"['birmingham grime', 'grime', 'instrumental grime', 'uk hip hop']",72
+318,Crumb,9,"['indie garage rock', 'neo-psychedelic']",60
+319,John Talabot,9,"['balearic', 'electronica', 'float house', 'future garage', 'microhouse', 'minimal techno']",38
+320,Doon Kanda,9,['deconstructed club'],32
+321,Dark Sky,9,"['future garage', 'uk experimental electronic', 'wonky']",40
+322,NAYANA IZ,9,['uk alternative hip hop'],40
+323,Alice Longyu Gao,9,"['hyperpop', 'pink noise']",43
+324,KH,9,"['pop', 'pop r&b']",85
+325,James Heather,9,"['compositional ambient', 'focus', 'neo-classical']",57
+326,Anastacia,9,[],60
+327,Fantastic Mr Fox,9,"['future garage', 'wonky']",13
+328,Sofia Kourtesis,9,['experimental house'],46
+329,GFOTY,9,"['escape room', 'hyperpop', 'pink noise', 'proto-hyperpop']",32
+330,Mungo's Hi Fi,9,"['dub punk', 'ragga jungle', 'uk reggae']",48
+331,Borgore,9,"['indie pop rap', 'oakland hip hop', 'pop rap', 'rap']",75
+332,Porij,9,[],39
+333,Coops,9,"['london rap', 'uk alternative hip hop']",41
+334,Jasper Tygner,9,['stutter house'],43
+335,D38,9,[],52
+336,George FitzGerald,9,"['electronica', 'future garage']",50
+337,Rimzee,8,['uk hip hop'],49
+338,serpentwithfeet,8,"['alternative r&b', 'escape room', 'experimental r&b']",53
+339,DJ Gruff,8,"['rap italiano old school', 'rap sardegna']",26
+340,Rasmatthew,8,[],24
+341,HAAi,8,['australian experimental'],48
+342,Margherita Vicario,8,"['italian indie pop', 'italian pop', 'rome indie']",43
+343,SwitchOTR,8,"['chill drill', 'melodic drill']",58
+344,Ragz Originale,8,['uk alternative hip hop'],45
+345,SBTRKT,8,"['electronica', 'future garage', 'indie soul', 'indietronica']",55
+346,Gil Scott-Heron,8,"['afrobeat', 'afropop', 'conscious hip hop', 'funk', 'jazz funk', 'political hip hop', 'slam poetry', 'soul']",51
+347,Manga Saint Hilare,8,"['grime', 'uk alternative hip hop']",35
+348,John Glacier,8,['experimental hip hop'],34
+349,Digga D,8,"['aussie drill', 'london rap', 'melodic drill', 'uk hip hop']",66
+350,Wet Leg,8,"['crank wave', 'indie rock']",62
+351,Weval,8,['electronica'],50
+352,Kanye West,8,"['chicago rap', 'hip hop', 'rap']",90
+353,Supershy,8,[],48
+354,Jockstrap,8,"['crank wave', 'london indie']",44
+355,Bonobo,8,"['downtempo', 'electronica', 'indietronica', 'instrumental hip hop', 'jazztronica', 'nu jazz', 'trip hop']",65
+356,DC,8,"['melodic rap', 'rage rap', 'vapor trap']",59
+357,letherette,8,"['future garage', 'wonky']",48
+358,Avelino,8,"['grime', 'uk hip hop']",52
+359,BigMama,8,"['j-rock', 'japanese alternative rock']",31
+360,easy life,8,"['leicester indie', 'modern indie pop']",57
+361,Krept & Konan,8,"['grime', 'uk hip hop']",58
+362,LD,8,"['corrido', 'corridos tumbados', 'nueva musica mexicana', 'sad sierreno', 'sierreno']",59
+363,Bindhumalini,8,['tamil indie'],19
+364,Jesse James Solomon,8,['uk alternative hip hop'],38
+365,Zola Blood,8,['vapor pop'],40
+366,Nafe Smallz,8,"['afroswing', 'uk hip hop']",60
+367,My Nu Leng,8,"['bass house', 'bristol electronic']",35
+368,Danny L Harle,8,"['escape room', 'hyperpop', 'proto-hyperpop']",45
+369,BXKS,8,['uk alternative hip hop'],32
+370,Dele Sosimi,7,['afrobeat'],36
+371,Vato Gonzalez,7,"['dutch house', 'electro house']",37
+372,Bugzy Malone,7,"['grime', 'manchester hip hop', 'uk hip hop']",64
+373,Mssingno,7,"['grimewave', 'neo grime', 'vogue', 'weightless']",24
+374,7038634357,7,"['deconstructed club', 'experimental electronic', 'hypertrance']",27
+375,Sir Hiss,7,"['deep dubstep', 'instrumental grime']",30
+376,tstewart,7,[],26
+377,Tapir!,7,[],17
+378,KAM-BU,7,['uk alternative hip hop'],32
+379,Sam Wills,7,['uk contemporary r&b'],56
+380,Cricca Dei Balordi,7,['rap italiano old school'],9
+381,Jai Paul,7,['experimental r&b'],51
+382,Moonchild Sanelly,7,"['south african pop', 'south african pop dance']",49
+383,Hyd,7,['trap latino'],59
+384,Kenny Beats,7,"['indie hip hop', 'trap', 'underground hip hop']",64
+385,Polyphia,7,['instrumental rock'],65
+386,Miso Extra,7,[],30
+387,Gionni Gioielli,7,['italian underground hip hop'],35
+388,Blue Hawaii,7,"['chillwave', 'quebec indie']",42
+389,DigDat,7,"['uk drill', 'uk hip hop']",50
+390,Komonazmuk,7,['classic dubstep'],3
+391,Joan Thiele,7,"['italian indie pop', 'italian pop', 'milan indie', 'r&b italiano']",42
+392,George Riley,7,['indie r&b'],40
+393,Dermot Kennedy,7,"['folk-pop', 'irish pop', 'uk pop']",74
+394,wewantwraiths,7,"['chill drill', 'uk hip hop', 'uk melodic rap']",56
+395,Kllo,7,"['aussietronica', 'indie soul']",44
+396,JGrrey,7,"['alternative r&b', 'uk contemporary r&b']",46
+397,Redlight,7,[],45
+398,Winston Surfshirt,7,['australian r&b'],51
+399,PinkPantheress,7,['bedroom pop'],79
+400,Verb T,7,"['uk alternative hip hop', 'uk hip hop']",41
+401,Bandokay,7,"['uk drill', 'uk hip hop']",57
+402,Okay Kaya,7,['art pop'],50
+403,Mykki Blanco,7,"['alternative r&b', 'escape room', 'lgbtq+ hip hop', 'trap queen']",40
+404,Ms. Dynamite,7,"['uk funky', 'uk garage']",51
+405,Tommy Newport,7,['kansas indie'],48
+406,Uk Apache,7,['ragga jungle'],43
+407,Pufuleti,7,[],25
+408,Benzz,7,[],61
+409,µ-Ziq,7,"['abstract', 'braindance', 'breakcore', 'deep idm', 'drill and bass', 'intelligent dance music', 'uk experimental electronic']",37
+410,Young T & Bugsey,7,"['afroswing', 'grime', 'nottingham hip hop', 'uk hip hop']",57
+411,Erick the Architect,7,['underground hip hop'],59
+412,Louis Cole,7,['la pop'],49
+413,Chynna,7,"['alternative r&b', 'electra', 'trap queen']",36
+414,Coubo,7,['chillhop'],35
+415,J-E-T-S,7,[],25
+416,Eliphino,7,['future garage'],19
+417,Kali Uchis,7,['colombian pop'],86
+418,Fontaines D.C.,7,"['crank wave', 'irish indie rock']",56
+419,Maverick Sabre,7,['irish hip hop'],60
+420,Clams Casino,7,"['cloud rap', 'experimental hip hop', 'instrumental hip hop', 'psychedelic hip hop', 'wonky']",57
+421,Namasenda,7,"['escape room', 'hyperpop', 'pink noise', 'proto-hyperpop']",40
+422,Desire Marea,6,"['deconstructed club', 'experimental club', 'multidisciplinary']",22
+423,The Kount,6,"['canadian contemporary r&b', 'synth funk']",46
+424,Bree Runway,6,['alternative r&b'],58
+425,67,6,['sigilkore'],30
+426,FloFilz,6,"['chillhop', 'jazz boom bap']",54
+427,Sampha,6,"['alternative r&b', 'indie soul']",63
+428,Mr. Mitch,6,"['grimewave', 'uk experimental electronic', 'weightless']",30
+429,Gwen Stefani,6,"['dance pop', 'pop']",72
+430,Siriusmo,6,"['destroy techno', 'electrofox', 'electronica', 'filter house']",44
+431,Tirzah,6,"['alternative r&b', 'art pop', 'electra', 'escape room', 'experimental pop', 'spectra', 'uk contemporary r&b']",46
+432,SebastiAn,6,"['colombian pop', 'latin pop', 'reggaeton', 'reggaeton colombiano', 'urbano latino']",81
+433,G Jones,6,"['brostep', 'electronic trap', 'glitch hop', 'vapor twitch']",42
+434,Amtrac,6,['nu disco'],52
+435,Funktuation,6,"['chennai indie', 'tamil indie']",6
+436,Porridge Radio,6,"['brighton indie', 'crank wave', 'english indie rock', 'uk post-punk revival']",38
+437,Waffle Xan,6,[],0
+438,DJ Hazard,6,"['bass house', 'drum and bass', 'jump up', 'jungle', 'ragga jungle']",36
+439,Roska,6,"['pop', 'r&b en espanol']",85
+440,RIP Swirl,6,[],27
+441,Mr. Williamz,6,"['ragga jungle', 'uk dancehall']",42
+442,Mereba,6,['alternative r&b'],57
+443,Ego Ella May,6,"['alternative r&b', 'uk contemporary r&b']",38
+444,GRM Daily,6,['uk hip hop'],58
+445,Tierra Whack,6,['alternative r&b'],59
+446,Fratelli Freschi,6,[],9
+447,Lily Allen,6,"['dance pop', 'electropop']",67
+448,Daniel Avery,6,"['ambient techno', 'electronica', 'intelligent dance music', 'microhouse', 'shiver pop']",47
+449,Mr Boss,6,['uk alternative hip hop'],35
+450,Oklou,6,"['alternative r&b', 'escape room']",46
+451,Kamakaze,6,['grime'],40
+452,Amaarae,6,"['afro r&b', 'afrobeats', 'alternative r&b', 'ghanaian alternative', 'ghanaian pop']",66
+453,Bodyrox,6,[],38
+454,Pip Blom,6,"['crank wave', 'dutch indie', 'dutch indie rock']",42
+455,Rv,6,"['reggaeton', 'trap latino', 'urbano latino']",69
+456,RollzRois,6,[],34
+457,MxRxGxA,6,['italian underground hip hop'],36
+458,A1 x J1,6,"['chill drill', 'melodic drill']",61
+459,Kwaisey Pee,6,"['azonto', 'hiplife']",22
+460,BLK ODYSSY,6,['indie r&b'],54
+461,Open Mike Eagle,6,"['abstract hip hop', 'alternative hip hop', 'escape room']",40
+462,Pinch,6,"['classical performance', 'violin']",46
+463,The xx,6,"['downtempo', 'dream pop', 'indietronica', 'modern rock']",66
+464,Juls,6,"['afrobeats', 'afroswing', 'uk dancehall']",52
+465,James Blake,6,"['art pop', 'electronica', 'indie soul', 'indietronica', 'neo soul', 'uk alternative pop']",69
+466,Akcent,6,"['classic disco polo', 'romanian house', 'romanian pop']",50
+467,Ezra Collective,6,"['british jazz', 'indie soul']",50
+468,SR,6,"['chill house', 'pop edm']",64
+469,Zeds Dead,6,"['brostep', 'canadian electronic', 'dubstep', 'edm', 'electro house', 'progressive electro house']",62
+470,Groundworks,6,[],44
+471,Teen Daze,6,"['chillwave', 'indie dream pop', 'vancouver indie']",43
+472,dutchavelli,6,['uk hip hop'],55
+473,LYZZA,6,"['deconstructed club', 'escape room', 'trap queen']",26
+474,Friction,6,"['dancefloor dnb', 'drum and bass', 'uk dnb']",54
+475,sunflwr,6,[],50
+476,The Range,6,['soft rock'],54
+477,Denis Sulta,6,['scottish electronic'],37
+478,Deft,6,"['alternative metal', 'nu metal', 'rap metal', 'rock', 'sacramento indie']",78
+479,Commodo,6,"['adult standards', 'disco', 'funk', 'mellow gold', 'motown', 'quiet storm', 'soft rock', 'soul']",64
+480,Ronzo,6,"['chill drill', 'melodic drill']",44
+481,NorthSideBenji,6,"['canadian hip hop', 'toronto rap']",49
+482,Siennor,6,['chennai indie'],25
+483,Sinjin Hawke,6,"['footwork', 'grimewave', 'proto-hyperpop']",28
+484,Foreign Beggars,6,"['brostep', 'uk hip hop']",43
+485,Fyfe,6,['vapor pop'],35
+486,yunè pinku,6,[],45
+487,Children of Zeus,6,"['manchester hip hop', 'uk alternative hip hop']",41
+488,Clairo,6,"['bedroom pop', 'indie pop', 'pop', 'pov: indie']",76
+489,Pariah,6,['future garage'],28
+490,Alix Perez,6,"['belgian edm', 'drum and bass', 'halftime dnb', 'liquid funk']",44
+491,DJ Fede,6,['italian underground hip hop'],30
+492,Bearcubs,6,"['indie soul', 'vapor soul']",42
+493,emil,6,['pop argentino'],76
+494,Jim-E Stack,6,[],48
+495,Baauer,5,"['edm', 'electro house', 'electronic trap']",53
+496,Clem Leek,5,"['compositional ambient', 'focus', 'nu age']",50
+497,Hak Baker,5,['london indie'],42
+498,Loraine James,5,"['deconstructed club', 'uk experimental electronic']",31
+499,Alewya,5,['alternative r&b'],41
+500,Tankz,5,['chill drill'],44
+501,STRFKR,5,"['indie rock', 'indietronica']",59
+502,TAAHLIAH,5,['pink noise'],30
+503,Bad Nerves,5,"['action rock', 'english indie rock']",48
+504,The Avalanches,5,"['australian alternative rock', 'australian dance', 'collage pop', 'electronica', 'indietronica', 'new rave', 'psychedelic hip hop']",56
+505,Wiley,5,[],43
+506,Congo Natty,5,"['jungle', 'ragga jungle']",40
+507,Metric,5,"['canadian indie', 'canadian rock', 'indie rock', 'indietronica', 'metropopolis', 'neo-synthpop']",60
+508,DJ Zinc,5,"['bass house', 'drum and bass', 'jump up', 'jungle', 'old school bassline', 'uk dance', 'uk garage']",49
+509,Primo Squarta,5,['italian underground hip hop'],31
+510,Roni Size,5,"['big beat', 'breakbeat', 'drum and bass', 'jungle']",41
+511,Shreea Kaul,5,[],37
+512,Meridian Dan,5,['grime'],29
+513,Ben Marc,5,[],27
+514,Taylor McFerrin,5,"['indie jazz', 'indie soul', 'neo r&b', 'wonky']",40
+515,Lone,5,"['contemporary country', 'country', 'country road']",59
+516,Ben Khan,5,['uk alternative pop'],32
+517,Jimothy Lacoste,5,['uk alternative hip hop'],24
+518,Baltra,5,['lo-fi house'],58
+519,Rusko,5,"['brostep', 'classic dubstep', 'dubstep product', 'filthstep']",46
+520,Wolf Alice,5,"['indie rock', 'modern alternative rock', 'modern rock']",59
+521,PJ Harvey,5,"['alternative rock', 'art pop', 'melancholia', 'permanent wave', 'piano rock', 'singer-songwriter']",57
+522,Romy,5,[],58
+523,Gamblers,5,[],40
+524,Yves Tumor,5,"['art pop', 'escape room', 'experimental pop', 'experimental r&b', 'hypnagogic pop']",59
+525,Blawan,5,"['float house', 'future garage', 'minimal techno', 'outsider house', 'techno']",34
+526,Ramz,5,"['afroswing', 'london rap', 'uk hip hop']",58
+527,Omega Sapien,5,['korean underground rap'],50
+528,Swet Shop Boys,5,"['conscious hip hop', 'pakistani hip hop', 'political hip hop']",25
+529,Datassette,5,"['braindance', 'deep idm']",26
+530,BAYLI,5,['indie r&b'],45
+531,Jayda G,5,['canadian electronic'],55
+532,Dizzy Fae,5,"['alternative r&b', 'minneapolis indie']",39
+533,Shabazz Palaces,5,"['afrofuturism', 'alternative hip hop', 'cascadia psych', 'experimental hip hop', 'psychedelic hip hop', 'seattle hip hop', 'wonky']",37
+534,Skream,5,"['classic dubstep', 'uk bass']",46
+535,Kofi Nti,5,"['azonto', 'hiplife']",24
+536,ODESZA,5,"['chillwave', 'edm', 'indietronica']",70
+537,Giulia Tess,5,[],24
+538,Sundara Karma,5,"['english indie rock', 'modern alternative rock', 'modern rock', 'reading indie']",47
+539,Devlin,5,['grime'],44
+540,Disclosure,5,"['edm', 'house', 'indietronica', 'uk dance']",72
+541,Amy Winehouse,5,"['british soul', 'neo soul']",74
+542,Jimmy Whoo,5,[],50
+543,Arz,5,[],37
+544,Boys Noize,5,"['alternative dance', 'dance-punk', 'electro house', 'fidget house', 'filter house', 'german dance', 'german techno', 'new rave']",52
+545,Still Woozy,5,"['bedroom pop', 'oakland indie', 'pov: indie']",68
+546,I. JORDAN,5,['experimental techno'],39
+547,Om Unit,5,"['bristol electronic', 'classic dubstep', 'footwork', 'future garage', 'minimal dnb', 'wonky']",30
+548,James Vickery,5,['uk contemporary r&b'],51
+549,Anirudh Ravichander,5,"['desi hip hop', 'filmi', 'tamil hip hop']",82
+550,Lex Amor,5,['uk alternative hip hop'],45
+551,Kano,5,"['chicago rap', 'hip hop', 'rap']",90
+552,K-Lone,5,['uk experimental electronic'],35
+553,Spor,5,['tulsa indie'],55
+554,Slayyyter,5,"['escape room', 'hyperpop', 'pink noise', 'proto-hyperpop']",53
+555,Wafia,5,"['australian pop', 'indie electropop']",56
+556,Griminal,5,['grime'],27
+557,NSG,5,"['afrobeats', 'afroswing', 'uk dancehall', 'uk hip hop']",57
+558,Tomu DJ,5,['experimental electronic'],20
+559,A Winged Victory for the Sullen,5,"['ambient', 'compositional ambient', 'drone', 'pastoral']",46
+560,Nokia Mansion,5,['uk alternative hip hop'],26
+561,Downhill2k01,5,['chill breakcore'],42
+562,NiNE8,5,['uk alternative hip hop'],34
+563,Empress Of,5,"['art pop', 'electropop', 'escape room', 'etherpop', 'shiver pop']",52
+564,ABRA,5,"['corrido', 'corridos tumbados', 'musica mexicana', 'norteno', 'nueva musica mexicana', 'sad sierreno', 'sierreno']",64
+565,Pretty Girl,5,[],42
+566,Big Joe,5,"['blues', 'jump blues', 'rhythm and blues', 'traditional blues']",37
+567,DJ Shadow,5,"['downtempo', 'electronica', 'instrumental hip hop', 'trip hop']",63
+568,Waterbaby,5,[],52
+569,Gaptoof,5,['irish hip hop'],17
+570,Lady Gaga,5,"['art pop', 'dance pop', 'pop']",85
+571,Cola,5,['crank wave'],39
+572,Novelist,4,"['djent', 'melodic metalcore', 'metalcore']",46
+573,I Weigh with Jameela Jamil,4,[],8
+574,Mala,4,"['bass house', 'edm', 'electro house', 'electronic trap', 'house']",51
+575,WSTRN,4,"['afroswing', 'grime', 'uk hip hop']",56
+576,Daedelus,4,"['glitch hop', 'intelligent dance music', 'wonky']",37
+577,Digital Mystikz,4,['classic dubstep'],12
+578,Bassti,4,"['chillhop', 'lo-fi beats']",51
+579,Death Cab for Cutie,4,"['alternative rock', 'chamber pop', 'indie rock', 'indietronica', 'modern rock', 'seattle indie', 'washington indie']",63
+580,123Mrk,4,['future garage'],4
+581,M Huncho,4,['uk hip hop'],62
+582,Collard,4,['uk contemporary r&b'],43
+583,Lord Apex,4,['uk alternative hip hop'],47
+584,J:Kenzo,4,"['classic dubstep', 'deep dubstep', 'minimal dubstep']",29
+585,100 gecs,4,"['hyperpop', 'proto-hyperpop', 'scenecore']",64
+586,Rosie Lowe,4,['uk contemporary r&b'],44
+587,Maral,4,['experimental club'],25
+588,TYSON,4,[],48
+589,Darkoo,4,"['afrobeats', 'afroswing', 'london rap', 'uk hip hop']",60
+590,Rina Sawayama,4,"['art pop', 'electropop', 'indie pop']",63
+591,Lava La Rue,4,"['alternative r&b', 'uk contemporary r&b']",45
+592,Grimes,4,"['art pop', 'canadian electropop', 'grave wave', 'indietronica', 'metropopolis', 'neo-synthpop']",68
+593,Paul White,4,"['alabama indie', 'new americana']",56
+594,Hilary Duff,4,"['dance pop', 'pop', 'post-teen pop']",56
+595,The Maccabees,4,"['british indie rock', 'indie rock', 'modern rock']",48
+596,M24,4,"['uk drill', 'uk hip hop']",54
+597,obli,4,[],45
+598,Ourman,4,['deep dubstep'],25
+599,Solange,4,"['afrofuturism', 'alternative r&b', 'r&b', 'urban contemporary']",60
+600,goddard.,4,[],63
+601,NASAYA,4,['stutter house'],47
+602,L7NNON,4,"['funk rj', 'pop rap brasileiro', 'trap brasileiro']",75
+603,Soccer96,4,['multidisciplinary'],31
+604,Bby Eco,4,[],26
+605,CHLOBOCOP,4,['scottish hip hop'],32
+606,Maria Chiara Argirò,4,[],30
+607,Indian Wells,4,['experimental electronic'],34
+608,Maliibu Miitch,4,['trap queen'],47
+609,Danny Brown,4,"['alternative hip hop', 'detroit hip hop', 'escape room', 'hip hop', 'underground hip hop']",65
+610,Maroon 5,4,['pop'],85
+611,Denzel Curry,4,"['dark trap', 'drill', 'hip hop', 'miami hip hop', 'rap', 'underground hip hop']",72
+612,SVDP,4,[],40
+613,Giusy Ferreri,4,"['italian adult pop', 'italian pop']",53
+614,Alex Kozobolis,4,"['compositional ambient', 'focus']",38
+615,Pashanim,4,"['german alternative rap', 'german drill', 'german hip hop']",70
+616,Blanco,4,"['black americana', 'country rap']",59
+617,OAKK,4,[],29
+618,ART,4,"['big room', 'edm', 'electro house', 'pop dance', 'progressive electro house', 'progressive house', 'russian edm']",60
+619,Ivy Lab,4,"['glitch hop', 'halftime dnb', 'liquid funk']",43
+620,808 State,4,"['acid house', 'classic house', 'intelligent dance music', 'madchester', 'rave', 'techno']",42
+621,kadiata,4,['uk alternative hip hop'],40
+622,Ten Walls,4,['lithuanian electronic'],43
+623,Warpaint,4,"['alternative dance', 'art pop', 'chamber pop', 'dance-punk', 'dream pop', 'electronica', 'indie rock', 'la indie', 'modern dream pop', 'neo-synthpop', 'new rave', 'shimmer pop']",49
+624,PAV4N,4,[],37
+625,Scooter loco,4,[],2
+626,Landlord,4,[],15
+627,Safety Trance,4,[],43
+628,Gabríel Ólafs,4,['background piano'],57
+629,Belief,4,[],21
+630,Leikeli47,4,"['alternative r&b', 'escape room', 'trap queen']",48
+631,Labyrinth Ear,4,['dark synthpop'],44
+632,Mt. Eden,4,"['chillstep', 'nz electronic']",38
+633,What So Not,4,"['aussietronica', 'brostep', 'edm', 'electro house', 'electronic trap', 'escape room', 'vapor twitch']",56
+634,Kilder,4,[],38
+635,Yelle,4,"['alternative dance', 'electro-pop francais', 'electroclash', 'electropop', 'filter house', 'neo-synthpop', 'new rave']",44
+636,NTsKi,4,['japanese house'],19
+637,Rocks FOE,4,[],24
+638,Sam Ryder,4,['uk pop'],60
+639,Cornelia Jakobs,4,['swedish pop'],51
+640,Circus Mircus,4,['georgian alternative'],23
+641,NxxxxxS,4,"['phonk', 'trap beats', 'vaporwave']",47
+642,Splurgeboys,4,['grime'],26
+643,Guru,4,"['desi pop', 'filmi', 'modern bollywood']",70
+644,FKJ,4,"['filter house', 'indie soul']",67
+645,Runar Blesvik,4,[],36
+646,SK-47,4,[],43
+647,Jam City,4,"['deconstructed club', 'footwork', 'grimewave', 'minimal dubstep', 'vogue']",40
+648,Y U QT,4,['ukg revival'],30
+649,Yungen,4,"['afroswing', 'grime', 'london rap', 'uk hip hop']",47
+650,K1,4,"['chill drill', 'melodic drill']",50
+651,datfootdive,4,['weirdcore'],45
+652,YULLOLA,4,['proto-hyperpop'],29
+653,JIMMY EDGAR,4,"['footwork', 'future garage', 'wonky']",35
+654,Flosstradamus,4,"['brostep', 'edm', 'electro house', 'electronic trap', 'mashup']",46
+655,1tbsp,4,[],36
+656,J Lloyd,4,['uk alternative pop'],45
+657,Ibibio Sound Machine,4,"['afro psych', 'afro-funk']",31
+658,Lili Caseley,4,[],29
+659,Dj Streaks,4,['disco house'],42
+660,AL-90,4,"['ambient house', 'russian electronic']",41
+661,Murlo,4,"['australian garage punk', 'neo-psychedelic']",49
+662,ayrtn,4,['uk alternative hip hop'],44
+663,Honey Dijon,4,[],48
+664,DjRUM,4,"['future garage', 'intelligent dance music', 'substep', 'uk experimental electronic', 'wonky']",39
+665,VTSS,4,"['polish techno', 'raw techno']",38
+666,Little Snake,4,['experimental club'],20
+667,Jim Legxacy,4,[],47
+668,Adane Best,4,"['azonto', 'hiplife']",18
+669,Kean Kavanagh,4,['irish indie'],30
+670,Dips & Lo-Wu,4,[],22
+671,Crooked Colours,4,['vapor soul'],54
+672,Daasebre Gyamenah,4,"['azonto', 'hiplife']",30
+673,Ed Sheeran,4,"['pop', 'uk pop']",91
+674,Peel Dream Magazine,4,['modern dream pop'],28
+675,Snorri Hallgrímsson,4,"['compositional ambient', 'icelandic classical', 'neo-classical']",43
+676,Everything Everything,4,"['british indie rock', 'experimental pop', 'modern rock', 'new rave']",50
+677,Kaitlyn Aurelia Smith,4,"['art pop', 'electra', 'experimental ambient', 'fluxwork', 'modular synth', 'spectra']",41
+678,Broken Bells,4,"['chamber pop', 'indie rock', 'indietronica', 'la indie', 'modern rock']",57
+679,Jeffrey Lewis,4,"['anti-folk', 'folk punk', 'lo-fi']",36
+680,Jorja Smith,4,"['r&b', 'uk contemporary r&b']",72
+681,Chris Lorenzo,4,"['bass house', 'house', 'tech house']",61
+682,Holy Fuck,4,"['dance-punk', 'electronic rock']",39
+683,UNIIQU3,4,"['escape room', 'jersey club', 'trap queen']",34
+684,Dean Blunt,4,"['collage pop', 'hypnagogic pop', 'uk experimental electronic']",53
+685,Real Lies,4,[],32
+686,Elderbrook,4,[],69
+687,Nix Northwest,4,['uk alternative hip hop'],46
+688,Rejjie Snow,4,"['indie soul', 'irish hip hop']",58
+689,Channel One,4,"['dub', 'techno']",22
+690,Caroline Rose,4,"['indie surf', 'vermont indie']",51
+691,Doechii,4,['alternative r&b'],69
+692,Strandz,4,[],60
+693,PVA,4,"['atl hip hop', 'plugg', 'pluggnb', 'rage rap', 'rap']",83
+694,Nito NB,4,['uk drill'],49
+695,Coco & Clair Clair,4,['cloud rap'],56
+696,Marlon Craft,4,['nyc rap'],60
+697,DJH,4,"['hip hop', 'miami hip hop', 'pop rap', 'rap']",76
+698,bdrmm,3,"['bedroom pop', 'crank wave', 'hull indie', 'nu gaze']",43
+699,Aluna,3,['dance pop'],64
+700,Rude Kid,3,"['grime', 'instrumental grime']",45
+701,Maha,3,"['alternative r&b', 'indie anthem-folk', 'uk contemporary r&b']",63
+702,Hannah Diamond,3,"['escape room', 'hyperpop', 'proto-hyperpop']",38
+703,Greta Van Fleet,3,"['modern blues rock', 'modern hard rock', 'rock']",69
+704,BROCKHAMPTON,3,"['boy band', 'rap']",67
+705,Ditonellapiaga,3,[],38
+706,boyrebecca,3,['hyperpop italiano'],20
+707,Girishh G,3,['tamil pop'],36
+708,BODEGA,3,"['harlem hip hop', 'underground hip hop']",37
+709,Phace,3,"['darkstep', 'drum and bass', 'german dnb', 'hamburg electronic', 'neurofunk']",37
+710,P!nk,3,"['dance pop', 'pop']",81
+711,TrueMendous,3,[],22
+712,Pitch 92,3,"['manchester hip hop', 'uk alternative hip hop']",35
+713,Marina Herlop,3,['spectra'],26
+714,Sneakbo,3,"['afroswing', 'grime', 'london rap', 'uk hip hop']",49
+715,Ensi,3,['chill beats'],41
+716,Emalkay,3,"['classic dubstep', 'filthstep']",28
+717,MEYY,3,['belgian pop'],30
+718,Baxter Dury,3,['chamber psych'],50
+719,Hope Tala,3,['alternative r&b'],52
+720,Balmorhea,3,"['bow pop', 'compositional ambient', 'instrumental post-rock', 'melancholia', 'neoclassical darkwave', 'pastoral', 'post-rock']",51
+721,Frank Carter & The Rattlesnakes,3,"['british alternative rock', 'modern alternative rock']",48
+722,Farai,3,['indonesian viral pop'],65
+723,Slugabed,3,['wonky'],23
+724,upsammy,3,"['bleep techno', 'experimental house']",27
+725,A. G. Cook,3,"['escape room', 'hyperpop', 'proto-hyperpop']",45
+726,A$AP Rocky,3,"['east coast hip hop', 'hip hop', 'rap', 'trap']",82
+727,ASHE 22,3,"['drill francais', 'french hip hop', 'pop urbaine', 'rap francais', 'rap lyonnais']",60
+728,Drill HQ,3,[],28
+729,ArrDee,3,['uk hip hop'],65
+730,Nevada,3,[],45
+731,G. V. Prakash,3,[],73
+732,Tiziano Ferro,3,"['italian adult pop', 'italian pop']",64
+733,Jords,3,"['contemporary country', 'country road']",74
+734,Rae Sremmurd,3,"['melodic rap', 'mississippi hip hop', 'rap', 'trap']",73
+735,Critical Impact,3,"['deep dnb', 'jump up', 'jungle']",25
+736,ML,3,[],35
+737,Kuma Overdose,3,[],22
+738,Guè,3,"['big room', 'dance pop', 'edm', 'pop', 'pop dance']",88
+739,Danny Byrd,3,"['drum and bass', 'liquid funk', 'uk dnb']",41
+740,AC Slater,3,"['bass house', 'brostep', 'fidget house']",50
+741,"Tyler, The Creator",3,"['hip hop', 'rap']",87
+742,Die,3,"['contemporary country', 'country', 'country road']",69
+743,bsd.u,3,"['chillhop', 'japanese chillhop', 'lo-fi beats']",48
+744,Kraftwerk,3,"['art rock', 'dusseldorf electronic', 'early synthpop', 'electro', 'new wave', 'proto-techno', 'synthpop']",53
+745,Peach,3,"['pov: indie', 'vancouver indie']",63
+746,Alex Metric,3,['uk dance'],46
+747,Vitesse X,3,[],29
+748,Bone Slim,3,['uk alternative hip hop'],33
+749,Mechatok,3,"['deconstructed club', 'drain', 'grimewave', 'hyperpop']",39
+750,Malaki,3,['irish hip hop'],38
+751,Tiga,3,"['alternative dance', 'canadian electronic', 'dance-punk', 'electroclash', 'electronica', 'filter house', 'new rave']",44
+752,Young Franco,3,['aussietronica'],51
+753,TQD,3,"['bass house', 'old school bassline', 'ukg revival']",30
+754,Dido,3,"['dance pop', 'europop', 'lilith', 'neo mellow', 'pop rock']",71
+755,TSVI,3,"['contemporary r&b', 'new jack swing', 'r&b', 'urban contemporary']",57
+756,Mr Jukes,3,"['british soul', 'indie soul']",42
+757,Saint Jude,3,[],35
+758,The Snuts,3,"['britpop revival', 'scottish indie rock']",53
+759,Outcast Music,3,[],44
+760,Er Costa,3,['italian underground hip hop'],29
+761,Joni Mitchell,3,"['canadian singer-songwriter', 'folk', 'folk rock', 'singer-songwriter']",54
+762,Alexander Panos,3,['future bass'],17
+763,Kahn,3,"['chicago rap', 'hip hop', 'rap']",90
+764,Ferdinando Arno,3,[],9
+765,Kaskade,3,"['edm', 'electro house', 'pop dance', 'progressive electro house', 'progressive house', 'vocal house']",66
+766,Mikey Energee,3,[],1
+767,Murkage Dave,3,['uk alternative hip hop'],36
+768,Skiifall,3,['uk alternative hip hop'],39
+769,Deyah,3,['welsh hip hop'],20
+770,Nubya Garcia,3,['british jazz'],40
+771,The Count & Sinden,3,['fidget house'],15
+772,MJ Cole,3,"['bass house', 'speed garage', 'uk funky', 'uk garage']",49
+773,Kaber Vasuki,3,"['chennai indie', 'tamil pop']",26
+774,anaiis,3,"['alternative r&b', 'uk contemporary r&b']",32
+775,Kele,3,"['afrofuturism', 'alternative r&b', 'escape room', 'experimental r&b']",53
+776,Heith,3,[],13
+777,TNGHT,3,['electronic trap'],33
+778,Equiknoxx,3,"['experimental dub', 'footwork']",34
+779,Stokka & Madbuddy,3,"['italian underground hip hop', 'rap italiano old school', 'rap siciliano']",32
+780,Florence + The Machine,3,"['baroque pop', 'modern rock', 'neo mellow', 'uk alternative pop']",77
+781,Space Dimension Controller,3,['float house'],26
+782,Yuweeri,3,"['latin arena pop', 'latin pop', 'mexican pop']",74
+783,Sangre Nueva,3,[],15
+784,Alex1,3,"['chill drill', 'melodic drill']",53
+785,Benjamin Damage,3,[],25
+786,BERWYN,3,[],44
+787,The Smile,3,['uk post-punk revival'],51
+788,Toro y Moi,3,"['chillwave', 'hypnagogic pop', 'indie soul', 'indietronica']",62
+789,Lawrence Hart,3,[],37
+790,Oscar Jerome,3,"['indie jazz', 'indie soul']",45
+791,Levin Liam,3,[],56
+792,Mr Drew,3,['ghanaian pop'],40
+793,Dream Mclean,3,[],28
+794,The Plants of the Gods podcast,3,[],46
+795,Goya Gumbani,3,['uk alternative hip hop'],29
+796,JEREMIAS,3,['venezuelan rock'],39
+797,Wavedash,3,"['brostep', 'dubstep']",35
+798,Achille Lauro,3,"['italian adult pop', 'italian hip hop', 'italian pop']",59
+799,Claire Rousay,3,"['experimental percussion', 'spectra']",28
+800,Sorry,3,[],42
+801,Persian Empire,3,[],36
+802,Yemi Alade,3,"['afrobeats', 'afropop', 'azontobeats', 'nigerian pop']",53
+803,Lil Tjay,3,"['brooklyn drill', 'melodic rap', 'nyc rap', 'rap']",80
+804,ELIO,3,['electropop'],59
+805,Footsie,3,['grime'],31
+806,Tzusing,3,"['chinese electronic', 'deconstructed club', 'fluxwork', 'taiwan electronic']",32
+807,altopalo,3,"['chill pop', 'experimental r&b']",33
+808,Supreems,3,"['breaks', 'float house']",25
+809,Monika LIU,3,"['lithuanian indie', 'lithuanian pop']",40
+810,Moomin,3,['float house'],35
+811,Voltage,3,"['bass house', 'drum and bass', 'jump up', 'jungle']",40
+812,Interplanetary Criminal,3,"['breaks', 'experimental house']",63
+813,Laurie Anderson,3,"['art pop', 'art rock', 'bow pop', 'experimental', 'experimental pop', 'experimental vocal', 'laboratorio']",41
+814,Proc Fiskal,3,"['footwork', 'grimewave', 'scottish electronic']",21
+815,Girl Unit,3,"['footwork', 'future garage', 'grimewave', 'uk bass']",21
+816,Thirty Seconds To Mars,3,"['modern rock', 'post-grunge']",68
+817,Hagop Tchaparian,3,[],23
+818,Roy of the Ravers,3,"['acid idm', 'experimental techno']",19
+819,Loods,3,"['australian dance', 'disco house']",41
+820,Pale Jay,3,[],50
+821,Keane,3,"['neo mellow', 'piano rock', 'pop rock']",73
+822,Citi Zēni,3,['latvian pop'],34
+823,Snow Patrol,3,"['irish rock', 'modern rock', 'neo mellow', 'permanent wave', 'pop rock']",67
+824,LUM!X,3,"['melbourne bounce international', 'slap house']",69
+825,Automatic,3,['synth punk'],43
+826,The Vernon Spring,3,[],48
+827,Prescribe Da Vibe,3,['ukg revival'],13
+828,Mansur Brown,3,"['afrofuturism', 'british jazz']",41
+829,Tom VR,3,['lo-fi house'],34
+830,Konstrakta,3,[],37
+831,MARO,3,['pop'],85
+832,Electric Guest,3,"['indietronica', 'la indie']",55
+833,Hustle Athletics,3,[],13
+834,Coconut Records,3,"['indie rock', 'indietronica', 'la indie']",49
+835,Yung Fume,3,"['london rap', 'uk hip hop']",42
+836,Solomon Fesshaye,3,[],27
+837,CHEMICARIZM,3,[],17
+838,Amato Sacchi,3,[],22
+839,Shura,3,['electropop'],46
+840,London Elektricity,3,"['drum and bass', 'liquid funk', 'uk dnb']",39
+841,Herbert,3,"['classical', 'classical performance', 'orchestral performance']",67
+842,E1 (3x3),3,[],58
+843,Rachika Nayar,3,"['pastoral', 'spectra']",34
+844,Chunky,3,"['fluxwork', 'manchester hip hop']",21
+845,NAVVI,3,['etherpop'],28
+846,Hiro Ama,3,[],21
+847,Braxe + Falcon,3,['filter house'],46
+848,ScHoolboy Q,3,"['gangster rap', 'hip hop', 'pop rap', 'rap', 'southern hip hop', 'trap']",72
+849,Yung Lean,3,"['cloud rap', 'psychedelic hip hop', 'underground hip hop']",64
+850,They Hate Change,3,['experimental hip hop'],18
+851,Priori,3,['dancefloor dnb'],31
+852,Chaos In The CBD,3,"['deep house', 'float house', 'future garage', 'jazz house', 'nz electronic']",49
+853,TWEAKS,3,['experimental r&b'],31
+854,Cabu,3,[],51
+855,Jehst,3,"['conscious hip hop', 'uk alternative hip hop', 'uk hip hop']",36
+856,KUČKA,3,['electra'],50
+857,aya,3,"['basshall', 'francoton', 'pop urbaine']",73
+858,Drug Church,3,"['dreamo', 'indie punk', 'modern melodic hardcore']",44
+859,Hermitude,3,"['australian dance', 'australian indie', 'downtempo', 'escape room']",52
+860,Edoardo Vianello,3,['classic italian pop'],44
+861,Renzo Arbore,3,"['canzone napoletana', 'classic italian pop', 'swing italiano']",38
+862,Vampire Weekend,3,"['baroque pop', 'chamber pop', 'garage rock', 'indie rock', 'indietronica', 'modern rock', 'stomp and holler']",66
+863,DA,3,"['hip hop', 'north carolina hip hop', 'rap']",81
+864,BAD WITH PHONES,3,[],22
+865,Holy Goof,3,"['bass house', 'bassline', 'old school bassline', 'uk dance']",47
+866,Aminé,3,"['pop rap', 'portland hip hop', 'rap', 'underground hip hop']",73
+867,A. K. Paul,3,['uk alternative pop'],29
+868,Dinamarca,3,"['deconstructed club', 'grimewave', 'vogue']",46
+869,Lokkhi Terra,3,['bangladeshi indie'],22
+870,Foals,3,"['alternative dance', 'garage rock', 'indie rock', 'indietronica', 'modern alternative rock', 'modern rock', 'oxford indie', 'rock']",64
+871,SOLOMON,3,[],53
+872,Interpol,3,"['alternative dance', 'alternative rock', 'indie rock', 'indietronica', 'modern rock', 'rock']",64
+873,Kelela,3,"['afrofuturism', 'alternative r&b', 'escape room', 'experimental r&b']",53
+874,love bean!,3,['scandipop'],29
+875,Silver Jews,3,"['alternative country', 'alternative rock', 'chamber pop', 'gbvfi', 'indie rock', 'lo-fi', 'noise pop']",46
+876,"Black Country, New Road",3,"['crank wave', 'indie rock', 'london indie', 'uk post-punk revival']",55
+877,Tora,3,['indie soul'],55
+878,TV On The Radio,3,"['alternative dance', 'alternative rock', 'brooklyn indie', 'chamber pop', 'indie rock', 'indietronica', 'modern rock', 'neo-synthpop']",55
+879,The Temper Trap,3,"['indietronica', 'modern rock']",66
+880,Kae Tempest,3,"['alternative r&b', 'crank wave', 'lgbtq+ hip hop', 'slam poetry']",45
+881,Safiyyah,3,['chill r&b'],32
+882,Harris Jayaraj,3,['filmi'],72
+883,Horsepower Productions,3,"['2-step', 'classic dubstep', 'future garage']",15
+884,D. Imman,3,['tamil pop'],62
+885,deadmau5,3,"['canadian electronic', 'complextro', 'edm', 'electro house', 'pop dance', 'progressive house']",67
+886,Submotion Orchestra,3,['substep'],39
+887,Duke & Jones,3,['uk dance'],53
+888,Jme,3,"['grime', 'instrumental grime', 'uk hip hop']",56
+889,Giant Claw,3,"['collage pop', 'vaporwave']",19
+890,Mano Le Tough,3,"['deep disco house', 'deep house', 'deep techno', 'electronica', 'float house', 'melodic techno', 'microhouse', 'minimal techno']",39
+891,The Knocks,3,"['alternative dance', 'indie poptimism', 'nu disco']",62
+892,Lorn,3,"['blackened deathcore', 'melodic metalcore', 'symphonic deathcore']",60
+893,Evenings,3,"['chillwave', 'glitch pop']",34
+894,DJ Marky,3,"['brazilian dnb', 'drum and bass', 'jazzy dnb', 'jungle', 'liquid funk', 'sambass']",44
+895,C1,3,['uk drill'],47
+896,ChildsPlay,3,"['basshall', 'dutch hip hop', 'dutch rap pop']",47
+897,Ferdinand fka Left Boy,3,['austrian pop'],47
+898,KiLLOWEN,3,[],41
+899,Aby Coulibaly,3,['irish pop'],33
+900,Major Lazer,3,"['dance pop', 'edm', 'electro house', 'moombahton', 'pop', 'pop dance']",74
+901,Unknown Mortal Orchestra,3,"['art pop', 'indie rock', 'indie soul', 'indietronica', 'kiwi rock', 'neo-psychedelic', 'portland hip hop', 'psychedelic pop']",62
+902,Emz,3,"['detroit hip hop', 'hip hop', 'rap']",90
+903,The Whitest Boy Alive,3,"['alternative dance', 'indietronica', 'new rave']",55
+904,Batu,3,[],43
+905,Jessy Lanza,3,"['art pop', 'canadian electropop', 'electra', 'escape room', 'experimental r&b', 'hamilton on indie', 'spectra']",40
+906,Boyish,3,['indie pop'],42
+907,Yeah Yeah Yeahs,3,"['alternative dance', 'alternative rock', 'art pop', 'dance-punk', 'garage rock', 'indie rock', 'modern rock', 'neo-synthpop', 'new rave']",65
+908,Lomelda,3,"['countrygaze', 'small room']",51
+909,Diplo,3,"['edm', 'electro house', 'moombahton', 'pop dance']",78
+910,Kaitsuu the Explorer,3,[],19
+911,SHERELLE,3,['modern jungle'],28
+912,Ambush Buzzworl,3,"['grime', 'uk hip hop']",40
+913,SAULT,3,"['indie soul', 'pop soul']",59
