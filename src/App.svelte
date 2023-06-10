@@ -118,6 +118,7 @@
     flowing through Yaeji and FKA Twigs to <span class="highlighted-grey">hyperpop</span> and Sega Bodega,
     connected by an asteroid belt of <span class="highlighted-grey">indie soul</span> and Bloc Party's <span class="highlighted-grey">indie rock</span>
     to chilled Jamie XX and the solar system of <span class="highlighted-grey">wonky</span> beats and its moons of <span class="highlighted-grey">lo-fi house</span> and <span class="highlighted-grey">dubstep</span>.
+    <br>If that's not how it looked to you, well, the map comes out a little different every time.
     <br>Musicians without genres, or with very random ones, are the distant stars gleaming round the edges.
     <br>Hover over an artist bubble to see <span class="highlighted-yellow">their name</span> (labelled genres they belong to will go <span class="highlighted-yellow">yellow</span> too). They are sized by song plays - I listened to Clavish 263 times.
     </h4>
