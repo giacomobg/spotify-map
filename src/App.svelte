@@ -28,7 +28,7 @@
   let genreSelectedThreshold = 9;
   let genreThreshold = 3;
   let artistThreshold = 3;
-  let startingGenres = ["uk alternative hip hop", "grime", "melodic drill", "electronica", "wonky", "hyperpop", "uk contemporary r&b", "indie soul", "drum and bass","pop", "rap", "indie rock", "ukg revival", "deep dubstep"]
+  let startingGenres = ["uk alternative hip hop", "grime", "melodic drill", "indietronica", "hyperpop", "uk contemporary r&b", "art pop", "rap", "wonky", "deep dubstep"]
   let genreList = ["electronica", "uk alternative hip hop",
     "art pop", "wonky", "alternative r&b",
     "melodic drill", "hyperpop",
@@ -113,10 +113,11 @@
   <h4>
     <br>My listening data for the last year, as a set of moving celestial bodies in gravitation towards an orbit.
     <br>The UK hip hop galaxy cycles round the margins, its constellations of <span class="highlighted-grey">grime</span> and <span class="highlighted-grey">drill</span> and <span class="highlighted-grey">alternative hip hop</span>.
-    <br>The core planetary system is a continuum from <span class="highlighted-grey">UK contemporary R&B</span> to <span class="highlighted-grey">electronica</span>, flowing through Yaeji and FKA Twigs to <span class="highlighted-grey">hyperpop</span> and Sega Bodega,
-    through a connecting strip of <span class="highlighted-grey">indie soul</span> and Bloc Party
-    to chilled Mount Kimbie and the solar system of <span class="highlighted-grey">wonky</span> beats and its moons of <span class="highlighted-grey">lo-fi house</span> and <span class="highlighted-grey">dubstep</span>.
-    <br>There were some surprises, like the <span class="highlighted-grey">UK garage revival</span> asteroid belt. 
+    <br>The core planetary system is split between <span class="highlighted-grey">pop</span>-adjacent music and <span class="highlighted-grey">electronica</span>,
+    with <span class="highlighted-grey">UK contemporary R&B</span> at one end,
+    flowing through Yaeji and FKA Twigs to <span class="highlighted-grey">hyperpop</span> and Sega Bodega,
+    connected by an asteroid belt of <span class="highlighted-grey">indie soul</span> and Bloc Party's <span class="highlighted-grey">indie rock</span>
+    to chilled Jamie XX and the solar system of <span class="highlighted-grey">wonky</span> beats and its moons of <span class="highlighted-grey">lo-fi house</span> and <span class="highlighted-grey">dubstep</span>.
     <br>Musicians without genres, or with very random ones, are the distant stars gleaming round the edges.
     <br>Hover over an artist bubble to see <span class="highlighted-yellow">their name</span> (labelled genres they belong to will go <span class="highlighted-yellow">yellow</span> too). They are sized by song plays - I listened to Clavish 263 times.
     </h4>
@@ -178,7 +179,7 @@
 
   {#if genreData}
     <Checklist
-      legend={"Click a genre to see where it turns up on the map.<br>There's too many... but there are fun ones like Italian underground hip hop and, err, brostep and Tamil pop? How did that get there..."}
+      legend={"Click a genre to see where it turns up on the map.<br>There's too many... but I found them useful to identify some of the smaller clusters, like UKG revival, Italian pop, drum and bass and urbano latino. Also, why was I listening to brostep?"}
       bind:entries={genreData}
     ></Checklist>
   {/if}
