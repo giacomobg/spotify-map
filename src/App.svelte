@@ -110,8 +110,9 @@
 
 <div class="embed-container">
   <h3>My Spotify universe</h3>
+  <p class="bold">From <a href="https://www.giacomomakes.art">Giacomo Boscaini-Gilroy</a></p>
   <h4>
-    <br>My listening data for the last year, as a set of moving celestial bodies in gravitation towards an orbit.
+    My listening data for the last year, as a set of moving celestial bodies in gravitation towards an orbit.
     <br>The UK hip hop galaxy cycles round the margins, its constellations of <span class="highlighted-grey">grime</span> and <span class="highlighted-grey">drill</span> and <span class="highlighted-grey">alternative hip hop</span>.
     <br>The core planetary system is split between <span class="highlighted-grey">pop</span>-adjacent music and <span class="highlighted-grey">electronica</span>,
     with <span class="highlighted-grey">UK contemporary R&B</span> at one end,
@@ -232,6 +233,19 @@
   }
   .highlighted-grey {
     background: #e0e0e0;
+  }
+
+  a {
+    text-decoration-thickness: 1px;
+    /* background-color: #eee; */
+    color: black;
+  }
+  /* a:not(.header.selected-page a) {
+    text-decoration-line: none;
+  } */
+  a:hover {
+    text-decoration-thickness: 2px;
+    text-decoration-line: underline !important;
   }
 </style>
 
