@@ -7,6 +7,10 @@
     src: url("./lib/SalmaAlfasans\ SemiBold.otf") format("opentype");
 }
 
+.bold {
+    font-family: 'SalmaBold';
+}
+
 html, body {
 	position: relative;
 	scroll-behavior: smooth;

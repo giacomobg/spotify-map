@@ -181,7 +181,7 @@
 
   {#if genreData}
     <Checklist
-      legend={"Click a genre to see where it turns up on the map.<br>There's too many... but I found them useful to identify some of the smaller clusters, like UKG revival, Italian pop, drum and bass and urbano latino. Also, why was I listening to brostep?"}
+      legend={"<span class='bold'>Click a genre to see where it turns up on the map.</span><br>There's too many... but I found them useful to identify some of the smaller clusters, like UKG revival, Italian pop, drum and bass and urbano latino. Also, why was I listening to brostep?"}
       bind:entries={genreData}
     ></Checklist>
   {/if}
@@ -223,9 +223,6 @@
     font-family: 'Salma';
     font-size: 24px;
     line-height: 1.1em;
-  }
-  .bold {
-    font-family: 'SalmaBold';
   }
 
   .highlighted-yellow {
