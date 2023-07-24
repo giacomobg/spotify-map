@@ -28,7 +28,10 @@
   let genreSelectedThreshold = 9;
   let genreThreshold = 3;
   let artistThreshold = 3;
-  let startingGenres = ["uk alternative hip hop", "grime", "melodic drill", "indietronica", "hyperpop", "uk contemporary r&b", "art pop", "rap", "wonky", "deep dubstep"]
+  let startingGenres = ["uk alternative hip hop", "grime", "melodic drill", "indietronica", "hyperpop", "uk contemporary r&b", "art pop", "rap", "wonky", "drum and bass"];
+  let toggleGenres = ["indie soul", "experimental hip hop",
+  "indie r&b", "italian pop", "urbano latino", "lo-fi house", "italian underground hip hop", "uk garage",
+    "deep dubstep"];
   let genreList = ["electronica", "uk alternative hip hop",
     "art pop", "wonky", "alternative r&b",
     "melodic drill", "hyperpop",
@@ -38,6 +41,10 @@
     "italian pop", "italian hip hop", "irish hip hop", "tamil pop", "chillhop", "neo-classical", 
     "urbano latino", "uk contemporary r&b", "london rap", "grime", "bass house", "deconstructed club", "classic dubstep", "uk drill"
   ];
+  let checklistEntries = [{
+    name: "Show more genres",
+    checked: false
+  }]
 
   let colors = ["#d88373","#83b5d1","#6a041d","#dbd8b3","#324a5f"].concat(Array(0).fill("#999"));
   // let colors = ["#dbd8b3","#d88373","#6a041d"];
@@ -103,6 +110,14 @@
   });
   // CARTESIAN_INCL_END
 
+  $: if (genreData) {
+    genreData.forEach(elem => {
+      if (toggleGenres.includes(elem.name)) {
+        elem.checked = checklistEntries[0].checked
+      }
+    });
+  }
+
 
 
 </script>
@@ -153,6 +168,14 @@
     
     <!-- CARTESIAN_INCL -->
     <div class='area-container {chartData ? "" : "isLoading"}'>
+      {#if genreData}
+        <div class="absolute">
+          <Checklist
+            bind:entries={checklistEntries}
+          ></Checklist>
+        </div>
+      {/if}
+  
       {#if chartData && genreData}
         <Cartesian data={chartData} {config}>
           <!-- {#if links} -->
@@ -171,6 +194,7 @@
   </div>
 
   <h4 class="mobile">On your phone, try switching to landscape so it's all a bit less packed in<br></h4>
+  
   <h4><span class="bold">Some notes on how this was created:</span>
     <br>I used Python to process the Spotify data, counting the number of plays per artist, removing all the ones I listened to 3 times or fewer.
     <br>I used the Spotify web API to search for each artist and get their genre. I searched by the artist's name, there was no ID in this dataset, which is why Dave, CRO and BOP for instance got the wrong genres.
@@ -178,13 +202,6 @@
     <br>Using d3-force, I was able to simulate physics, including forces that make any artists of the same genre gravitate together. That's how the bubbles know how to find each other and self-organise into clusters.
   </h4>
   <br>
-
-  {#if genreData}
-    <Checklist
-      legend={"<span class='bold'>Click a genre to see where it turns up on the map.</span><br>There's too many... but I found them useful to identify some of the smaller clusters, like UKG revival, Italian pop, drum and bass and urbano latino. Also, why was I listening to brostep?"}
-      bind:entries={genreData}
-    ></Checklist>
-  {/if}
 
   <!-- <div class="source-text">Source: XXX</div> -->
 </div>
@@ -200,11 +217,6 @@
     width: 100vw;
   }
   /* CARTESIAN_INCL_END */
-  
-  button {
-    z-index: 100;
-    /* position: absolute; */
-  }
 
   .grid {
     display: grid;
@@ -243,6 +255,11 @@
   a:hover {
     text-decoration-thickness: 2px;
     text-decoration-line: underline !important;
+  }
+
+  .absolute {
+    position: absolute;
+    z-index: 1000;
   }
 </style>
 

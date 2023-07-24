@@ -1,5 +1,5 @@
 <script>
-    export let legend;
+    export let legend = "";
     export let entries;
     $: console.log(entries)
 
@@ -35,10 +35,10 @@
         font-family: 'SalmaBold';
         float: left;
         white-space: nowrap;
-        width: 120px;
+        width: 140px;
         overflow: hidden;              /* "overflow" value must be different from  visible"*/ 
-        -o-text-overflow: ellipsis;    /* Opera < 11*/
-        text-overflow:    ellipsis;    /* IE, Safari (WebKit), Opera >= 11, FF > 6 */   
+        -o-text-overflow: clip;    /* Opera < 11*/
+        text-overflow:    clip;    /* IE, Safari (WebKit), Opera >= 11, FF > 6 */   
     
         margin: 5px 5px;
         height: 24px;
