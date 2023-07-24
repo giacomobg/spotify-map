@@ -77,6 +77,12 @@ label {
 .layercake-container {
 	height: 100%;
 }
+
+@media(min-width:500px) {
+	.mobile {
+		display: none
+	}
+}
 html {
 	font-size: 18px;
 	line-height: 28px;

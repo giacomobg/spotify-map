@@ -77,3 +77,9 @@ label {
 .layercake-container {
 	height: 100%;
 }
+
+@media(min-width:500px) {
+	.mobile {
+		display: none
+	}
+}

@@ -170,7 +170,7 @@
 
   </div>
 
-  <h4>On your phone, try switching to landscape so it's all a bit less packed in<br></h4>
+  <h4 class="mobile">On your phone, try switching to landscape so it's all a bit less packed in<br></h4>
   <h4><span class="bold">Some notes on how this was created:</span>
     <br>I used Python to process the Spotify data, counting the number of plays per artist, removing all the ones I listened to 3 times or fewer.
     <br>I used the Spotify web API to search for each artist and get their genre. I searched by the artist's name, there was no ID in this dataset, which is why Dave, CRO and BOP for instance got the wrong genres.
@@ -194,8 +194,8 @@
   .area-container,
   .col-container {
     position: relative; /* 100% turns into 100vh if you don't */
-    min-height: 440px;
-    height: 85vw;
+    min-height: 500px;
+    height: 75vw;
     /* max-height: 80vh; */
     width: 100vw;
   }
